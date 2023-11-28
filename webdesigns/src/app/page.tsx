@@ -1,4 +1,6 @@
+import Princing from '@/components/Princing'
+
 const Home: React.FC = () => {
-	return <div></div>
+	return <Princing />
 }
 export default Home
