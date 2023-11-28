@@ -1,7 +1,7 @@
-const Princing: React.FC = () => {
+const Pricing: React.FC = () => {
 	return (
 		<section>
-			<h1 className="text-6xl font-bold text-center mt-12 mb-4">Princing</h1>
+			<h1 className="text-6xl font-bold text-center mt-12 mb-4">Pricing</h1>
 			<h3 className="text-xl text-gray-600 font-semibold text-center mb-3">Simple & Predictable pricing. No surprises.</h3>
 			<div className="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-7xl">
 				<div>
@@ -252,4 +252,4 @@ const Princing: React.FC = () => {
 		</section>
 	)
 }
-export default Princing
+export default Pricing
