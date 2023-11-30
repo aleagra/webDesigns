@@ -15,7 +15,7 @@ const Pricing: React.FC = () => {
 
 								<ul role="list" className="pt-2 space-y-6  text-center">
 									<span className="text-lg font-semibold text-gray-600 ">What s included?</span>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="flex justify-center items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -30,7 +30,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Up to 10 credit cards</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -45,7 +45,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Up to 1,000 credits</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -60,7 +60,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Tacky wallet</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -95,7 +95,7 @@ const Pricing: React.FC = () => {
 
 								<ul role="list" className="pt-2 space-y-6  text-center">
 									<span className="text-lg font-semibold text-gray-600 ">What s included?</span>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="flex justify-center items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -110,7 +110,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-gray-600">Up to 10 credit cards</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -125,7 +125,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Up to 1,000 credits</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -140,7 +140,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Tacky wallet</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -175,7 +175,7 @@ const Pricing: React.FC = () => {
 
 								<ul role="list" className="pt-2 space-y-6  text-center">
 									<span className="text-lg font-semibold text-gray-600 ">What s included?</span>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="flex justify-center items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -190,7 +190,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Up to 10 credit cards</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -205,7 +205,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Up to 1,000 credits</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
@@ -220,7 +220,7 @@ const Pricing: React.FC = () => {
 										</div>
 										<span className="ml-3 text-neutral-600">Tacky wallet</span>
 									</li>
-									<li className="flex pl-10 items-center">
+									<li className="flex xl:pl-10 items-center">
 										<div className="inline-flex items-center w-5 h-5 bg-indigo-600 rounded-xl">
 											<svg
 												className="flex-shrink-0 w-4 h-4 mx-auto text-white"
