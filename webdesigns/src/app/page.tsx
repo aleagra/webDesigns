@@ -1,6 +1,4 @@
-import Projects from '@/components/Projects'
-
 const Home: React.FC = () => {
-	return <Projects />
+	return <div></div>
 }
 export default Home
