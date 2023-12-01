@@ -1,6 +1,7 @@
 'use client'
 import React, { useRef, useState } from 'react'
-import { TweenMax } from 'gsap'
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
+import ProjectsCards from './ProjectsCards'
 
 interface Slide {
 	index: number
@@ -66,19 +67,20 @@ const Slide: React.FC<SlideProps> = ({ slide, current, handleSlideClick }) => {
 }
 
 interface SliderProps {
-	heading: string
-	slides: Slide[]
+  heading: string;
+  slides: Slide[];
+  slideClass?: string; // Nueva prop para la clase del slide
+  imageClass?: string; // Nueva prop para la clase de la imagen del slide
 }
 
-const Slider: React.FC<SliderProps> = ({ heading, slides }) => {
-	const [current, setCurrent] = useState<number>(0)
+const Slider: React.FC<SliderProps> = ({ heading, slides, slideClass, imageClass }) => {
+  const [current, setCurrent] = useState<number>(0);
 
 	const handlePreviousClick = () => {
 		const previous = current - 1
 		setCurrent(previous < 0 ? slides.length - 1 : previous)
 	}
 
-	// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 	const handleNextClick = () => {
 		const next = current + 1
 		setCurrent(next === slides.length ? 0 : next)
@@ -95,31 +97,41 @@ const Slider: React.FC<SliderProps> = ({ heading, slides }) => {
 		transform: `translateX(-${current * (100 / slides?.length)}%)`,
 	}
 
-	return (
-		<div className="slider" aria-labelledby={headingId}>
-			<ul className="slider__wrapper" style={wrapperTransform}>
-				<h3 id={headingId} className="visuallyhidden">
-					{heading}
-				</h3>
+  return (
+    <div className={`slider ${slideClass}`} aria-labelledby={headingId}>
+      <ul className={`slider__wrapper ${imageClass}`} style={wrapperTransform}>
+        <h3 id={headingId} className="visuallyhidden">
+          {heading}
+        </h3>
 
-				{slides?.map(slide => <Slide key={slide.index} slide={slide} current={current} handleSlideClick={handleSlideClick} />)}
-			</ul>
+        <div className="w-full flex gap-4 p-5">
+          {slides?.map((slide) => (
+            <ProjectsCards
+              key={slide.index}
+              title={slide.headline}
+              imageSrc={slide.src}
+              index={slide.index}
+              category="Web Design"
+              customClass={`slide ${current === slide.index ? 'slide--current' : ''} ${
+                current - 1 === slide.index ? 'slide--previous' : ''
+              } ${current + 1 === slide.index ? 'slide--next' : ''} ${slideClass || ''}`}
+              imageClass={imageClass}
+            />
+          ))}
+        </div>
+      </ul>
 
-			<div className="slider__controls">
-				<button className="btn btn--previous" title="Go to previous slide" onClick={handlePreviousClick}>
-					<svg className="icon" viewBox="0 0 24 24">
-						<path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-					</svg>
-				</button>
+      <div className="slider__controls w-full flex justify-center gap-10 text-5xl text-white">
+        <button className="btn btn--previous" title="Go to previous slide" onClick={handlePreviousClick}>
+          <FaArrowCircleLeft />
+        </button>
 
-				<button className="btn btn--next" title="Go to next slide" onClick={handleNextClick}>
-					<svg className="icon" viewBox="0 0 24 24">
-						<path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-					</svg>
-				</button>
-			</div>
-		</div>
-	)
+        <button className="btn btn--next" title="Go to next slide" onClick={handleNextClick}>
+          <FaArrowCircleRight />
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default Slider

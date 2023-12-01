@@ -1,7 +1,40 @@
+'use client'
 import ProjectsCards from './ProjectsCards'
+import { FaArrowCircleLeft } from 'react-icons/fa'
+import { FaArrowCircleRight } from 'react-icons/fa'
 import Slider from './Slider'
+import { useState } from 'react'
 
 const Projects: React.FC = () => {
+	const slideArray = [
+		{
+			index: 0,
+			headline: 'Slide 1 Headline',
+			button: 'Button 1',
+			src: '/project.jpeg',
+		},
+		{
+			index: 1,
+			headline: 'Slide 2 Headline',
+			button: 'Button 2',
+			src: '/project.jpeg',
+		},
+		{
+			index: 2,
+			headline: 'Slide 3 Headline',
+			button: 'Button 3',
+			src: '/project.jpeg',
+		},
+	]
+	const [currentSlide, setCurrentSlide] = useState<number>(0)
+
+	const handlePreviousSlide = () => {
+		setCurrentSlide(prevSlide => (prevSlide - 1 + 3) % 3) // Assuming you have 3 slides
+	}
+
+	const handleNextSlide = () => {
+		setCurrentSlide(prevSlide => (prevSlide + 1) % 3) // Assuming you have 3 slides
+	}
 	return (
 		<section className="flex w-full mx-auto h-screen bg-black items-center ">
 			<div className="w-[1440px] mx-auto">
@@ -33,12 +66,8 @@ const Projects: React.FC = () => {
 						Web Design
 					</button>
 				</div>
-				<div className="gap-12 my-12 h-fit grid grid-cols-3">
-					<ProjectsCards />
-					<ProjectsCards />
-					<ProjectsCards />
-				</div>
-				<Slider />
+				
+				<Slider heading="Your Heading" slides={slideArray} />
 			</div>
 		</section>
 	)
