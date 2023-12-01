@@ -11,7 +11,7 @@ const Homepage: React.FC = () => {
 								Matter pulls everything you want to read into one beautiful place. With powerful tools, curation, seamless audio and
 								more, we re building a reader for today s internet.
 							</p>
-							<div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
+							{/* <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
 								<div className="mt-3 rounded-lg sm:mt-0">
 									<button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-indigo-600 lg:px-10 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
 										Get bundle
@@ -22,7 +22,7 @@ const Homepage: React.FC = () => {
 										See features
 									</button>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

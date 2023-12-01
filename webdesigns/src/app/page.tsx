@@ -9,8 +9,8 @@ const Home: React.FC = () => {
 		<>
 			<Navbar />
 			<Homepage />
-			<Pricing />
 			<Projects />
+			<Pricing />
 			<Footer />
 		</>
 	)
