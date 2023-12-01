@@ -1,6 +1,6 @@
-import Navbar from '@/components/Navbar'
+import Projects from '@/components/Projects'
 
 const Home: React.FC = () => {
-	return <Navbar />
+	return <div></div>
 }
 export default Home
