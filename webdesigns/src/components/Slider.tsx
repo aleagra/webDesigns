@@ -100,7 +100,7 @@ const Slider: React.FC<SliderProps> = ({ heading, slides, slideClass, imageClass
   return (
     <div className={`slider ${slideClass}`} aria-labelledby={headingId}>
       <ul className={`slider__wrapper ${imageClass}`} style={wrapperTransform}>
-        <h3 id={headingId} className="visuallyhidden">
+        <h3 id={headingId} className="visuallyhidden text-white">
           {heading}
         </h3>
 
