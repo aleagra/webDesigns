@@ -1,6 +1,6 @@
-import Pricing from '@/components/Pricing'
+import Projects from '@/components/Projects'
 
 const Home: React.FC = () => {
-	return <Pricing />
+	return <div></div>
 }
 export default Home
