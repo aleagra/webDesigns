@@ -1,7 +1,4 @@
 'use client'
-import ProjectsCards from './ProjectsCards'
-import { FaArrowCircleLeft } from 'react-icons/fa'
-import { FaArrowCircleRight } from 'react-icons/fa'
 import Slider from './Slider'
 import { useState } from 'react'
 
