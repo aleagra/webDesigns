@@ -1,6 +1,5 @@
-import Footer from './components/Footer'
 
 const Home: React.FC = () => {
-	return <Footer />
-}
+	return <div></div>
+  
 export default Home
