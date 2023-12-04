@@ -21,6 +21,11 @@ const Projects: React.FC = () => {
 			headline: 'Slide 3 Headline',
 			button: 'Button 3',
 			src: '/project.jpeg',
+		},{
+			index: 3,
+			headline: 'Slide 3 Headline',
+			button: 'Button 3',
+			src: '/project.jpeg',
 		},
 	]
 	const [currentSlide, setCurrentSlide] = useState<number>(0)
@@ -40,7 +45,7 @@ const Projects: React.FC = () => {
 					<span className="text-white text-7xl font-medium block tracking-tighter m-0 p-0">The most hyper-curated</span>
 					<span className="text-white text-7xl font-medium block tracking-tighter m-0 p-0">list of creatives on earth.</span>
 				</div>
-				<div className="flex gap-4">
+				<div data-aos="fade-up" className="flex gap-4">
 					<button className="px-5 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-transparent border border-indigo-600 rounded-full hover:bg-indigo-600">
 						Branding
 					</button>
