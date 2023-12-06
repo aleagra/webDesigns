@@ -17,21 +17,17 @@ const Navbar: React.FC = () => {
 						<Image src="/logo.png" alt="" width={100} height={100} />
 					</div>
 					<div className="flex lg:hidden">
-						<FaBars className="text-black" />
+						<FaBars className="text-white" />
 					</div>
 					<div className="hidden lg:flex lg:gap-x-12">
 						{navigation.map(item => (
-							<a
-								key={item.name}
-								href={item.href}
-								className="text-base font-semibold leading-6 py-2 text-gray-600 hover:text-indigo-600"
-							>
+							<a key={item.name} href={item.href} className="text-base font-semibold leading-6 py-2 text-white hover:text-indigo-600">
 								{item.name}
 							</a>
 						))}
 					</div>
 					<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-						<a href="#" className="text-base font-semibold leading-6 text-gray-600 hover:text-indigo-600">
+						<a href="#" className="text-base font-semibold leading-6 text-white hover:text-indigo-600">
 							Log in <span aria-hidden="true">&rarr;</span>
 						</a>
 					</div>

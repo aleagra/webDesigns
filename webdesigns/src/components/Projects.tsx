@@ -1,5 +1,4 @@
 import ProjectsCards from './ProjectsCards'
-import Slider from './Slider'
 
 const Projects: React.FC = () => {
 	return (
@@ -40,7 +39,6 @@ const Projects: React.FC = () => {
 					<ProjectsCards />
 					<ProjectsCards />
 				</div>
-				{/* <Slider /> */}
 			</div>
 		</section>
 	)
