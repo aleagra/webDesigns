@@ -1,4 +1,6 @@
+import About from "@/components/About"
+
 const Home: React.FC = () => {
-	return <div></div>
+	return <div><About/></div>
 }
 export default Home
