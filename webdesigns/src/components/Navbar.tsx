@@ -1,43 +1,132 @@
-import Image from 'next/image'
-import { FaBars } from 'react-icons/fa'
+'use client'
+import { gsap } from 'gsap'
+import { useEffect, useState, useRef } from 'react'
 
-const navigation = [
-	{ name: 'Products', href: '#' },
-	{ name: 'Features', href: '#' },
-	{ name: 'Pricing', href: '#' },
-	{ name: 'Contact', href: '#' },
-]
+export default function Navbar() {
 
-const Navbar: React.FC = () => {
+	const [iniciar, setIniciar] = useState(true);
+	const navContainerRef = useRef(null);
+
+	useEffect(() => {
+	  const tl = gsap.timeline({ paused: true });
+  
+	  const animateOpenNav = () => {
+		tl.to('#nav-container', 0.2, {
+		  autoAlpha: 1,
+		  delay: 0.1,
+		});
+  
+		tl.to('.site-logo', 0.2, {
+		  color: '#fff',
+		}, '-=0.1');
+	  };
+  
+	  tl.from('.flex > div', {
+		opacity: 0,
+		y: 10,
+		stagger: {
+		  amount: 0.04,
+		},
+	  });
+  
+	  tl.to(
+		'.nav-link > a',
+		{
+		  top: 0,
+		  ease: 'power2.inOut',
+		  stagger: {
+			amount: 0.1,
+		  },
+		},
+		'-=0.4',
+	  );
+  
+	  tl.from(
+		'.nav-footer',
+		{
+		  opacity: 0,
+		},
+		'-=0.5',
+	  ).reverse();
+  
+	  const openNav = () => {
+		animateOpenNav();
+		const navBtn = document.getElementById('menu-toggle-btn');
+  
+		if (navBtn) {
+		  navBtn.onclick = function (e) {
+			navBtn.classList.toggle('active', iniciar);
+			setIniciar(!iniciar);
+			tl.reversed(!iniciar);
+		  };
+		}
+	  };
+  
+	  openNav();
+	}, [iniciar]);
+
 	return (
 		<>
-			<header className="absolute inset-x-0 top-0 z-50">
-				<nav className="flex items-center justify-between h-full p-6 lg:px-8 w-[1200px] mx-auto">
-					<div className="flex lg:flex-1">
-						<Image src="/logo.png" alt="" width={100} height={100} />
+			<div className="container">
+				<div className="navbar">
+					<div className="site-logo">Plastic</div>
+					<div className="menu-toggle">
+						<div id="menu-toggle-btn">
+							<span></span>
+						</div>
 					</div>
-					<div className="flex lg:hidden">
-						<FaBars className="text-black" />
+				</div>
+				<div className="header">
+					We transform <br />
+					ideas into digital <br /> outcomes
+				</div>
+				<div id="nav-container" ref={navContainerRef}>
+					<div className="nav">
+						<div className="col flex">
+							<div className="nav-logo">c/</div>
+							<div className="nav-socials">
+								<a href="#">Behance</a>
+								<a href="#">Twitter</a>
+								<a href="#">Instagram</a>
+								<a href="#">Linkedin</a>
+								<a href="#">Medium</a>
+							</div>
+						</div>
+						<div className="col">
+							<div className="nav-link">
+								<a href="#">Work</a>
+								<div className="nav-item-wrapper"></div>
+							</div>
+							<div className="nav-link">
+								<a href="#">Services</a>
+								<div className="nav-item-wrapper"></div>
+							</div>
+							<div className="nav-link">
+								<a href="#">About</a>
+								<div className="nav-item-wrapper"></div>
+							</div>
+							<div className="nav-link">
+								<a href="#">Manifesto</a>
+								<div className="nav-item-wrapper"></div>
+							</div>
+							<div className="nav-link">
+								<a href="#">Constact</a>
+								<div className="nav-item-wrapper"></div>
+							</div>
+						</div>
 					</div>
-					<div className="hidden lg:flex lg:gap-x-12">
-						{navigation.map(item => (
-							<a
-								key={item.name}
-								href={item.href}
-								className="text-base font-semibold leading-6 py-2 text-gray-600 hover:text-indigo-600"
-							>
-								{item.name}
-							</a>
-						))}
+					<div className="nav-footer">
+						<div className="links">
+							<a href="#">Privacy Policy</a>
+							<a href="#">Cookie Policy</a>
+							<a href="#">Terms and Conditions</a>
+						</div>
+						<div className="contact">
+							<a href="#">juanpymos@gmail.com</a>
+						</div>
 					</div>
-					<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-						<a href="#" className="text-base font-semibold leading-6 text-gray-600 hover:text-indigo-600">
-							Log in <span aria-hidden="true">&rarr;</span>
-						</a>
-					</div>
-				</nav>
-			</header>
+				</div>
+			</div>
 		</>
 	)
 }
-export default Navbar
