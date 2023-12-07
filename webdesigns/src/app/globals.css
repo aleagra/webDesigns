@@ -19,9 +19,6 @@ h1 {
 
 /* About */
 .about-section p {
-	margin-top: 10rem;
-	font-size: 70px;
-	line-height: 1.12;
 	opacity: 0;
 }
 
@@ -32,4 +29,12 @@ h1 {
 
 .about-section p.is-reveal {
 	opacity: 1;
+}
+
+/* Scroll */
+* {
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0px;
 }
