@@ -14,8 +14,8 @@ const Navbar: React.FC = () => {
 						<FaBars className="text-white" />
 					</div>
 					<div className="hidden lg:flex lg:gap-x-12">
-						{navigation.map(item => (
-							<a key={item.name} href={item.href} className="text-base font-semibold leading-6 py-2 text-white hover:text-indigo-600">
+						{navigation.map((item, index) => (
+							<a key={index} href={item.href} className="text-base font-semibold leading-6 py-2 text-white hover:text-indigo-600">
 								{item.name}
 							</a>
 						))}

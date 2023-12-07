@@ -15,6 +15,6 @@ export const categories = ['Branding', 'Motion', 'Product design', 'Copywriting'
 
 export const projectData = [
 	{ title: 'Web desing', img: './photo.gif', name: 'Alejandro Agra' },
-	{ title: 'Web desing', img: './photo.gif', name: 'Alejandro Agra' },
-	{ title: 'Web desing', img: './photo.gif', name: 'Alejandro Agra' },
+	{ title: 'Web desing', img: './photo4.gif', name: 'Alejandro Agra' },
+	{ title: 'Web desing', img: './photo3.gif', name: 'Alejandro Agra' },
 ]
