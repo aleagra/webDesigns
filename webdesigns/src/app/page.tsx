@@ -1,3 +1,4 @@
+import About from "@/components/About"
 import Footer from '@/components/Footer'
 import Homepage from '@/components/Homepage'
 import Navbar from '@/components/Navbar'
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
 			<Homepage />
 			<Projects />
 			<Pricing />
+			<About/>
 			<Footer />
 		</>
 	)

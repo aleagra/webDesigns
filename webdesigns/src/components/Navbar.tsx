@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
 	return (
 		<>
 			<header className="sticky bg-black inset-x-0 top-0 z-50">
-				<nav className="flex items-center justify-between h-full p-6 lg:px-8 xl:w-[1200px] mx-auto">
+				<nav className="flex items-center justify-between h-full p-2 lg:px-8 xl:w-[1200px] mx-auto">
 					<div className="flex lg:flex-1">
 						<Image src="/logo.png" alt="" width={100} height={100} />
 					</div>
