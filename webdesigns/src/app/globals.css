@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Home */
+h1 {
+	font-size: 80px;
+	text-align: center;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.lineParent {
+	overflow: hidden;
+}
+.lineChildren {
+	transform: translate(0, 500px);
+}
+
+/* About */
+.about-section p {
+	opacity: 0;
+}
+
+.about-section p > div {
+	opacity: 0;
+	transform: translateY(0px);
+}
+
+.about-section p.is-reveal {
+	opacity: 1;
+}
+
+/* Scroll */
+* {
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0px;
+}

@@ -1,6 +1,20 @@
 import About from "@/components/About"
+import Footer from '@/components/Footer'
+import Homepage from '@/components/Homepage'
+import Navbar from '@/components/Navbar'
+import Pricing from '@/components/Pricing'
+import Projects from '@/components/Projects'
 
 const Home: React.FC = () => {
-	return <div><About/></div>
+	return (
+		<>
+			<Navbar />
+			<Homepage />
+			<Projects />
+			<Pricing />
+			<About/>
+			<Footer />
+		</>
+	)
 }
 export default Home
