@@ -14,7 +14,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 					<span className="text-lg font-semibold text-gray-600 ">What s included?</span>
 					{features.map((feature, index) => (
 						<li key={index} className="flex xl:pl-10 items-center">
-							<div className="flex justify-center items-center w-5 h-5 bg-[#162a21] rounded-xl">
+							<div className="flex justify-center items-center w-5 h-5 bg-[#0d0d0d] rounded-xl">
 								<svg
 									className="flex-shrink-0 w-4 h-4 mx-auto text-white"
 									xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 			<div className="mt-6 rounded-lg">
 				<a
 					href="#"
-					className="w-full items-center block px-10 py-2.5 text-base font-medium text-center hover:bg-[#162a21] hover:text-white text-black transition duration-500 ease-in-out transform border border-black  rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"
+					className="w-full items-center block px-10 py-2.5 text-base font-medium text-center hover:bg-[#0d0d0d] hover:text-white text-black transition duration-500 ease-in-out transform border border-black  rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"
 				>
 					Get Started
 				</a>
@@ -45,7 +45,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 
 const PricingSection: React.FC = () => {
 	return (
-		<section className="py-20" id="products">
+		<section className="py-20" id="pricing">
 			<h1 className="text-6xl font-bold text-center pt-12 mb-4">Pricing</h1>
 			<p className="text-xl text-gray-600 font-semibold text-center mb-3">Simple & Predictable pricing. No surprises.</p>
 			<div className="relative items-center mx-auto xl:w-[1300px]">

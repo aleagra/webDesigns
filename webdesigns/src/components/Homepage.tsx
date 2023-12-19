@@ -8,6 +8,7 @@ const Homepage: React.FC = () => {
 	useEffect(() => {
 		gsap.registerPlugin(ScrollTrigger)
 
+		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		const myText = new SplitType('.header-text-1')
 
 		gsap.to('.char', {
@@ -34,16 +35,12 @@ const Homepage: React.FC = () => {
 				// },
 			},
 		})
-
-		// tl.to('.contenedor', { width: '98vh' })
-		// tl.fromTo('.logo', { opacity: 0, y: 20 }, { opacity: 1, y: 0 }, '<')
-		// tl.fromTo('.menu', { opacity: 0, y: 20 }, { opacity: 1, y: 0 }, '<')
 		tl.fromTo('.description', { opacity: 0 }, { opacity: 1 }, '<')
 		tl.fromTo('.buttonn', { opacity: 0 }, { delay: 1, opacity: 1, duration: 0.7 }, '<')
 	}, [])
 
 	return (
-		<section className="h-screen flex flex-col justify-center items-center bg-[#162a21] text-[#f4f0ea] contenedor">
+		<section className="h-screen flex flex-col justify-center items-center bg-[#0d0d0d] text-[#f4f0ea] contenedor">
 			<div>
 				<h1 className="uppercase header-text-1 char">The destination</h1>
 			</div>
@@ -56,6 +53,14 @@ const Homepage: React.FC = () => {
 			<button className="buttonn px-12 py-3 text-base font-medium text-center transition duration-300 ease-in-out transform  border-2 hover:bg-white hover:text-black border-white rounded-full text-white bg-transparent">
 				Branding
 			</button>
+			<marquee behavior="" direction="" scrollamount="20">
+				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
+				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
+				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
+				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
+				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
+				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
+			</marquee>
 		</section>
 	)
 }

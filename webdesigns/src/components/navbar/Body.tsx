@@ -4,7 +4,7 @@ import { blur, translate } from './anim'
 import { navigation } from '@/utils/data'
 import type { Dispatch, SetStateAction } from 'react'
 
-interface BodyProps {
+export interface BodyProps {
 	selectedLink: { isActive: boolean; index?: number | undefined }
 	setSelectedLink: Dispatch<SetStateAction<{ isActive: boolean; index?: number | undefined }>>
 }

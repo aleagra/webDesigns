@@ -1,10 +1,17 @@
+import type { MotionValue } from 'framer-motion'
+
 export interface PricingCardProps {
 	title: string
 	price: number
 	features: string[]
 }
 export interface ProjectCardProps {
-	img: string
 	title: string
-	name: string
+	i: number
+	description: string
+	src: string
+	progress: MotionValue<number>
+	targetScale: number
+	range: [number, number]
+	url: string
 }

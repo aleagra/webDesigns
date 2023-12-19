@@ -9,7 +9,7 @@ const Pruebanav: React.FC = () => {
 	const [isActive, setIsActive] = useState<{ isActive: boolean; index?: number }>({ isActive: false, index: 0 })
 
 	return (
-		<div className="bg-[#f4f0ea] fixed w-full box-border p-3 lg:p-6 z-[20]">
+		<div className="bg-white fixed w-full box-border p-3 lg:p-6 z-[20] shadow-md">
 			<div className="flex justify-between uppercase text-xs lg:text-base font-medium relative text-black">
 				<Link href="/">Web Desings</Link>
 				<div
@@ -32,7 +32,7 @@ const Pruebanav: React.FC = () => {
 				variants={background}
 				initial="initial"
 				animate={isActive.isActive ? 'open' : 'closed'}
-				className="bg-[#172a21] h-full w-full z-[20] absolute left-0 top-[100%]"
+				className="bg-[#0d0d0d] h-full w-full z-[20] absolute left-0 top-[100%]"
 			></motion.div>
 			<AnimatePresence mode="wait"> {isActive.isActive && <Index isActive={isActive} setIsActive={setIsActive} />}</AnimatePresence>
 		</div>
