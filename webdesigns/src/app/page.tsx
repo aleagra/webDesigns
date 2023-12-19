@@ -1,13 +1,13 @@
 import Footer from '@/components/Footer'
 import Homepage from '@/components/Homepage'
-import Navbar from '@/components/Navbar'
 import Pricing from '@/components/Pricing'
 import Projects from '@/components/Projects'
+import Pruebanav from '@/components/navbar/nav'
 
 const Home: React.FC = () => {
 	return (
 		<>
-			<Navbar />
+			<Pruebanav />
 			<Homepage />
 			<Projects />
 			<Pricing />

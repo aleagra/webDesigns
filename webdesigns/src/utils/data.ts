@@ -1,10 +1,10 @@
 import type { PricingCardProps } from '@/types/interface'
 
 export const navigation = [
-	{ name: 'Products', href: '#' },
-	{ name: 'Features', href: '#' },
-	{ name: 'Pricing', href: '#' },
-	{ name: 'Contact', href: '#' },
+	{ title: 'Products', href: '#products' },
+	{ title: 'Features', href: '#' },
+	{ title: 'Pricing', href: '#' },
+	{ title: 'Contact', href: '#' },
 ]
 export const pricingData: PricingCardProps[] = [
 	{ title: 'Single page', price: 100, features: ['Up to 10 credit cards', 'Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },

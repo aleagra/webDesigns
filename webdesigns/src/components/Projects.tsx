@@ -3,12 +3,12 @@ import ProjectsCards from './ProjectsCards'
 
 const Projects: React.FC = () => {
 	return (
-		<section className="flex w-full mx-auto min-h-screen bg-[#f6f5f4] items-center">
+		<section className="flex w-full mx-auto min-h-screen items-center">
 			<div className="w-[1300px] mx-auto">
-				<div className="my-8 mt-16 text-center">
-					<h3 className="text-xl font-semibold text-gray-600 mb-7 text-center border-b-2 w-fit mx-auto border-gray-600 pb-2">
+				<div className="my-8 mt-16s text-center">
+					<p className="text-2xl font-semibold text-[#162a21] mb-7 text-center border-b-4 w-fit mx-auto border-[#162a21] pb-2">
 						Welcome to Stellar
-					</h3>
+					</p>
 					<span className="text-7xl font-medium block tracking-tighter m-0 p-0">The most hyper-curated</span>
 					<span className="text-7xl font-medium block tracking-tighter m-0 p-0">list of creatives on earth.</span>
 				</div>
@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
 					{categories.map((category, index) => (
 						<button
 							key={index}
-							className="px-5 py-3 text-base font-medium text-center transition duration-500 ease-in-out transform bg-black text-white border border-gray-600 rounded-full hover:bg-black hover:text-white"
+							className="px-5 py-3 text-base font-medium text-center transition duration-500 ease-in-out transform bg-[#162a21] text-white border border-gray-600 rounded-full hover:bg-black hover:text-white"
 						>
 							{category}
 						</button>

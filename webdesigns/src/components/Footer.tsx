@@ -41,10 +41,10 @@ const SocialIcons: React.FC = () => {
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="w-full bg-[#f6f5f4] py-10">
+		<footer className="w-full  py-10">
 			<div className="flex flex-col h-full text-center justify-center items-center">
 				<h1 className="text-7xl font-semibold mb-6 text-black">Join Our Wailist</h1>
-				<h3 className="text-base text-gray-600 font-semibold">By signing up, you agree to receive awesome emails and updates.</h3>
+				<p className="text-base text-gray-600 font-semibold">By signing up, you agree to receive awesome emails and updates.</p>
 				<NewsletterForm />
 				<div className="w-full flex justify-evenly items-center text-gra mt-20">
 					<p className="text-base font-semibold  hover:text-black transition-colors duration-500 cursor-pointer">Alejandro Agra</p>
