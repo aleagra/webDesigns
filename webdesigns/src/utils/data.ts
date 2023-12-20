@@ -11,12 +11,11 @@ export const pricingData: PricingCardProps[] = [
 	{ title: 'Premium page', price: 150, features: ['Up to 10 credit cards', 'Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
 	{ title: 'Full Stack', price: 200, features: ['Up to 10 credit cards', 'Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
 ]
-export const categories = ['Branding', 'Motion', 'Product design', 'Copywriting', 'Web Design', 'Web Design', 'Web Design']
-
 export const projectData = [
-	{ title: 'Web desing', img: '/photo.gif', name: 'Alejandro Agra' },
-	{ title: 'Web desing', img: '/photo4.gif', name: 'Alejandro Agra' },
-	{ title: 'Web desing', img: '/photo3.gif', name: 'Alejandro Agra' },
+	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#4a449e' },
+	{ title: 'Eztranslate', src: '/Eztranslate.webp', name: 'Alejandro Agra', color: '#122040' },
+	{ title: 'SocialApp', src: '/SocialApp.webp', name: 'Alejandro Agra', color: '#ff595e' },
+	{ title: 'Weatherme', src: '/Weatherme.webp', name: 'Alejandro Agra', color: '#3b5bb5' },
 ]
 export const projects = [
 	{

@@ -1,35 +1,21 @@
 'use client'
-import { useScroll } from 'framer-motion'
-import { useRef } from 'react'
-import { projects } from '@/utils/data'
-import Card from './Card'
+import { projectData } from '@/utils/data'
+import { Cards } from './Cards'
+import { useState } from 'react'
+import { Modal } from './Modal'
 
-const Project: React.FC = () => {
-	const container = useRef(null)
-	const { scrollYProgress } = useScroll({
-		target: container,
-		offset: ['start start', 'end end'],
-	})
+export const Projects: React.FC = () => {
+	const [modal, setModal] = useState({ active: false, index: 0 })
 
 	return (
-		<main ref={container} className="relative bg-[#0d0d0d]" id="proyectos">
-			{projects.map((project, i) => {
-				const targetScale = 1 - (projects.length - i) * 0.1
-				return (
-					<Card
-						title={project.title}
-						src={project.src}
-						key={`p_${i}`}
-						i={i}
-						url={project.link}
-						description={project.description}
-						progress={scrollYProgress}
-						range={[i * 0.25, 1]}
-						targetScale={targetScale}
-					/>
-				)
-			})}
+		<main className="flex flex-col h-screen mt-20 items-center justify-center">
+			{/* <h1 className="text-center font-medium text-8xl py-4">More Projects</h1> */}
+			<div className="w-[1300px] flex flex-col items-center justify-center">
+				{projectData.map((project, index) => {
+					return <Cards index={index} title={project.title} setModal={setModal} key={index} />
+				})}
+			</div>
+			<Modal modal={modal} projects={projectData} />
 		</main>
 	)
 }
-export default Project

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { background, opacity } from './anim'
 import { Index } from './Index'
 
-const Pruebanav: React.FC = () => {
+const Navbar: React.FC = () => {
 	const [isActive, setIsActive] = useState<{ isActive: boolean; index?: number }>({ isActive: false, index: 0 })
 
 	return (
@@ -38,4 +38,4 @@ const Pruebanav: React.FC = () => {
 		</div>
 	)
 }
-export default Pruebanav
+export default Navbar

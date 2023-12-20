@@ -53,14 +53,14 @@ const Homepage: React.FC = () => {
 			<button className="buttonn px-12 py-3 text-base font-medium text-center transition duration-300 ease-in-out transform  border-2 hover:bg-white hover:text-black border-white rounded-full text-white bg-transparent">
 				Branding
 			</button>
-			<marquee behavior="" direction="" scrollamount="20">
+			{/* <marquee behavior="" direction="" scrollamount="20">
 				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
 				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
 				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
 				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
 				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
 				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
-			</marquee>
+			</marquee> */}
 		</section>
 	)
 }

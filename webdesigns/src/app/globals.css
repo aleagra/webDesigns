@@ -9,9 +9,6 @@ h1 {
 	line-height: 1;
 	font-weight: bold;
 }
-body {
-	@apply bg-[#f4f0ea];
-}
 
 .lineParent {
 	overflow: hidden;
@@ -50,4 +47,24 @@ body {
 	transform: translateY(115px);
 	transition: transform 0.5s;
 	opacity: 0;
+}
+.slider {
+	transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.project:hover h2 {
+	transform: translateX(-10px);
+}
+.project:hover p {
+	transform: translateX(-10px);
+}
+.project h2 {
+	font-size: 60px;
+	margin: 0px;
+	font-weight: 400;
+	transition: all 0.4s;
+}
+
+.project p {
+	transition: all 0.4s;
+	font-weight: 300;
 }

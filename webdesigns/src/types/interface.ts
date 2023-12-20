@@ -15,3 +15,12 @@ export interface ProjectCardProps {
 	range: [number, number]
 	url: string
 }
+export interface ModalProps {
+	modal: { active: boolean; index: number }
+	projects: Array<{ src: string; color: string }>
+}
+export interface CardsProps {
+	index: number
+	title: string
+	setModal: React.Dispatch<React.SetStateAction<{ active: boolean; index: number }>>
+}
