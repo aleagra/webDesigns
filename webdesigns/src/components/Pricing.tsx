@@ -45,10 +45,13 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 
 const PricingSection: React.FC = () => {
 	return (
-		<section className="py-20" id="pricing">
-			<h1 className="text-6xl font-bold text-center pt-12 mb-4">Pricing</h1>
-			<p className="text-xl text-gray-600 font-semibold text-center mb-3">Simple & Predictable pricing. No surprises.</p>
-			<div className="relative items-center mx-auto xl:w-[1300px]">
+		<section className="py-20 bg-[#0d0d0d]" id="pricing">
+			<div className="border-t-2 w-[1440px] uppercase font-medium my-4  mx-auto text-white text-3xl border-gray-500 pt-6 flex justify-between">
+				<p>Precios</p>
+				<p className="text-gray-500">Simple & Predictable pricing</p>
+			</div>
+			{/* <p className="text-xl text-gray-600 font-semibold text-center mb-3">Simple & Predictable pricing. No surprises.</p> */}
+			<div className="relative items-center mx-auto xl:w-[1440px]">
 				<div>
 					<div className="relative py-10 space-y-12 overflow-hidden lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-12 rounded-xl">
 						{pricingData.map((card, index) => (

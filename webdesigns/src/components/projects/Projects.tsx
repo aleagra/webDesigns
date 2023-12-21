@@ -8,8 +8,9 @@ export const Projects: React.FC = () => {
 	const [modal, setModal] = useState({ active: false, index: 0 })
 
 	return (
-		<main className="flex flex-col h-screen mt-20 items-center justify-center">
+		<main className="flex flex-col h-screen items-center justify-center bg-[#0d0d0d]">
 			{/* <h1 className="text-center font-medium text-8xl py-4">More Projects</h1> */}
+
 			<div className="w-[1300px] flex flex-col items-center justify-center">
 				{projectData.map((project, index) => {
 					return <Cards index={index} title={project.title} setModal={setModal} key={index} />
