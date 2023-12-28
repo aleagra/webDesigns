@@ -11,8 +11,8 @@ const Home: React.FC = () => {
 		<>
 			<Navbar />
 			<Homepage />
-			<Marquee />
 			<Project />
+			<Marquee />
 			<Projects />
 			<Pricing />
 			<Footer />

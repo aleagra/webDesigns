@@ -13,8 +13,8 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 100 })
 	const { scrollY } = useScroll()
 	const scrollVelocity = useVelocity(scrollY)
 	const smoothVelocity = useSpring(scrollVelocity, {
-		damping: 50,
-		stiffness: 400,
+		damping: 100,
+		stiffness: 50,
 	})
 	const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
 		clamp: false,
@@ -38,7 +38,7 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 100 })
 	})
 
 	return (
-		<div className="parallax text-white font-light py-4 pt-8 text-3xl">
+		<div className="parallax text-white py-4 pt-8 text-3xl font-medium">
 			<motion.div className="scroller" style={{ x }}>
 				<span>{children} </span>
 				<span>{children} </span>

@@ -8,12 +8,10 @@ export const Projects: React.FC = () => {
 	const [modal, setModal] = useState({ active: false, index: 0 })
 
 	return (
-		<main className="flex flex-col h-screen items-center justify-center bg-[#0d0d0d]">
-			{/* <h1 className="text-center font-medium text-8xl py-4">More Projects</h1> */}
-
-			<div className="w-[1300px] flex flex-col items-center justify-center">
+		<main className="flex flex-col h-[85vh] items-center bg-[#0c0c0c]">
+			<div className="w-full flex flex-col items-center justify-center mt-20">
 				{projectData.map((project, index) => {
-					return <Cards index={index} title={project.title} setModal={setModal} key={index} />
+					return <Cards index={index} title={project.title} name={project.name} setModal={setModal} key={index} />
 				})}
 			</div>
 			<Modal modal={modal} projects={projectData} />

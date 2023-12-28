@@ -33,9 +33,9 @@ const Body: React.FC<BodyProps> = ({ selectedLink, setSelectedLink }) => {
 		<div className="flex flex-wrap mt-10 w-full lg:mt-20">
 			{navigation.map((link, index): JSX.Element => {
 				return (
-					<Link key={index} href={link.href} className="text-black uppercase">
+					<Link key={index} href={link.href} className="text-white uppercase">
 						<motion.p
-							className="m-0 flex mr-5 pt-3 font-normal text-3xl lg:text-8xl lg:pr-10 border-r-4 border-black"
+							className="m-0 flex mr-5 pt-3 font-normal text-3xl lg:text-[85px] leading-none lg:pr-10 border-r-4 border-white"
 							onMouseOver={() => {
 								setSelectedLink(prev => ({ ...prev, index }))
 							}}

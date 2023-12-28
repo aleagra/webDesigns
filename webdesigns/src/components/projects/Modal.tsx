@@ -48,7 +48,7 @@ export const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
 				variants={scaleAnimation}
 				initial="initial"
 				animate={active ? 'enter' : 'closed'}
-				className="h-[350px] w-[400px] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center"
+				className="h-[250px] w-[300px] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center"
 			>
 				<div style={{ top: index * -100 + '%' }} className="h-full w-full absolute slider">
 					{projects.map((project, index) => {
@@ -63,14 +63,14 @@ export const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
 			</motion.div>
 			<motion.div
 				ref={cursor}
-				className="w-[80px] h-[80px] rounded-full bg-[#0d0d0d] text-white absolute z-10 flex items-center justify-center text-sm font-light pointer-events-none"
+				className="w-[80px] h-[80px] rounded-full bg-[#0c0c0c] text-white absolute z-10 flex items-center justify-center text-sm font-light pointer-events-none"
 				variants={scaleAnimation}
 				initial="initial"
 				animate={active ? 'enter' : 'closed'}
 			></motion.div>
 			<motion.div
 				ref={cursorLabel}
-				className="w-[80px] h-[80px] rounded-full bg-[#0d0d0d] text-white absolute z-10 flex items-center justify-center text-sm font-light pointer-events-none bg-transparent"
+				className="w-[80px] h-[80px] rounded-full bg-[#0c0c0c] text-white absolute z-10 flex items-center justify-center text-sm font-light pointer-events-none bg-transparent"
 				variants={scaleAnimation}
 				initial="initial"
 				animate={active ? 'enter' : 'closed'}

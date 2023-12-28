@@ -22,5 +22,6 @@ export interface ModalProps {
 export interface CardsProps {
 	index: number
 	title: string
+	name: string
 	setModal: React.Dispatch<React.SetStateAction<{ active: boolean; index: number }>>
 }

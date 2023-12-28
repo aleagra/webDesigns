@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
 	const [isActive, setIsActive] = useState<{ isActive: boolean; index?: number }>({ isActive: false, index: 0 })
 
 	return (
-		<div className="bg-white fixed w-full box-border p-3 lg:p-6 z-[20] shadow-md">
-			<div className="flex justify-between uppercase text-xs lg:text-base font-medium relative text-black">
+		<div className="fixed w-full box-border p-3 lg:px-16 lg:pt-10 lg:pb-5 z-[20] bg-[#0c0c0c]">
+			<div className="flex justify-between uppercase text-xs lg:text-base font-medium relative text-white">
 				<Link href="/">Web Desings</Link>
 				<div
 					onClick={() => {
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 				variants={background}
 				initial="initial"
 				animate={isActive.isActive ? 'open' : 'closed'}
-				className="bg-[#0d0d0d] h-full w-full z-[20] absolute left-0 top-[100%]"
+				className="bg-white h-full w-full z-[20] absolute left-0 top-[100%]"
 			></motion.div>
 			<AnimatePresence mode="wait"> {isActive.isActive && <Index isActive={isActive} setIsActive={setIsActive} />}</AnimatePresence>
 		</div>

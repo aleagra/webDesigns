@@ -12,10 +12,11 @@ const Project: React.FC = () => {
 	})
 
 	return (
-		<main ref={container} className="relative bg-[#0d0d0d]" id="proyectos">
-			<div className="border-t-2 w-[1440px] uppercase font-medium  mx-auto text-white text-3xl border-gray-500 pt-6 flex justify-between">
-				<p>Nuestros trabajos</p>
-				<p className="text-gray-500">Explorar</p>
+		<main ref={container} className="relative bg-[#0c0c0c]" id="proyectos">
+			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 pt-6">
+				<span className="text-[85px] leading-none uppercase font-light">Trusted</span>
+				<span className="text-[85px] leading-none uppercase font-bold">Collaborators</span>
+				<p className="w-[350px] text-lg text-center mt-5 text-[#777777]">We develop gorgeous and memorable projects for our clients. </p>
 			</div>
 			{projects.map((project, i) => {
 				const targetScale = 1 - (projects.length - i) * 0.1

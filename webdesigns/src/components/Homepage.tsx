@@ -40,19 +40,19 @@ const Homepage: React.FC = () => {
 	}, [])
 
 	return (
-		<section className="h-screen flex flex-col justify-center items-center bg-[#0d0d0d] text-[#f4f0ea] contenedor">
+		<section className="h-screen flex flex-col justify-center items-center bg-[#0c0c0c] text-white contenedor">
 			<div>
-				<h1 className="uppercase header-text-1 char">The destination</h1>
+				<h1 className="uppercase text-[145px] font-light text-center leading-none header-text-1 char">The destination</h1>
 			</div>
 
 			<div>
-				<h1 className="uppercase header-text-1">for your next one</h1>
+				<h1 className="uppercase text-[145px] text-center leading-none header-text-1 font-bold">for your next one</h1>
 			</div>
 
-			<span className="text-xl mt-5 mb-10 text-white description">HAFH IS A DISCOVERY PLATFORM FOR THE MODERN TRAVELLER</span>
-			<button className="buttonn px-12 py-3 text-base font-medium text-center transition duration-300 ease-in-out transform  border-2 hover:bg-white hover:text-black border-white rounded-full text-white bg-transparent">
+			{/* <span className="text-xl mt-5 mb-10 text-white description">HAFH IS A DISCOVERY PLATFORM FOR THE MODERN TRAVELLER</span> */}
+			{/* <button className="buttonn px-12 py-3 text-base font-medium text-center transition duration-300 ease-in-out transform  border-2 hover:bg-white hover:text-black border-white rounded-full text-white bg-transparent">
 				Branding
-			</button>
+			</button> */}
 			{/* <marquee behavior="" direction="" scrollamount="20">
 				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
 				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>

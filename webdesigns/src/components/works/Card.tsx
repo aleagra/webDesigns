@@ -16,11 +16,11 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 	const scale = useTransform(progress, range, [1, targetScale])
 
 	return (
-		<div ref={container} className="h-screen w-full flex items-center justify-center sticky top-0">
+		<div ref={container} className="h-screen w-full flex items-center justify-center sticky top-20 pt-5">
 			<motion.div
 				style={{
 					scale,
-					top: `calc(-5vh + ${i * 25}px)`,
+					top: `calc(-5vh + ${i * 0}px)`,
 				}}
 				className="flex flex-col relative h-[650px] w-[1440px] rounded-md origin-top bg-white shadow-xl cursor-pointer"
 			>

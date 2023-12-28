@@ -3,15 +3,9 @@
 @tailwind utilities;
 
 body {
-	@apply bg-[#0d0d0d];
+	@apply bg-[#0c0c0c];
 }
 /* Home */
-h1 {
-	font-size: 80px;
-	text-align: center;
-	line-height: 1;
-	font-weight: bold;
-}
 
 .lineParent {
 	overflow: hidden;
@@ -61,9 +55,6 @@ h1 {
 	transform: translateX(-10px);
 }
 .project h2 {
-	font-size: 60px;
-	margin: 0px;
-	font-weight: 400;
 	transition: all 0.4s;
 }
 
@@ -82,7 +73,6 @@ h1 {
 }
 
 .parallax .scroller {
-	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 90px;
 	display: flex;
@@ -94,4 +84,47 @@ h1 {
 .parallax span {
 	display: block;
 	margin-right: 30px;
+}
+
+.button {
+	background-color: transparent;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.button::before {
+	content: '';
+	background-color: white;
+	width: 100%;
+	height: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition:
+		height 0.2s ease,
+		background-color 0.2s ease,
+		color 0.2s ease;
+}
+
+.button:hover {
+	color: black;
+	background-color: transparent;
+}
+
+.button:hover::before {
+	height: 100%;
+	@apply bg-white;
+}
+
+.pricing:hover .span {
+	color: black;
+}
+.pricing:hover a {
+	color: white;
+	background-color: black;
+}
+.pricing a {
+	background-color: white;
+	color: black;
 }

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { League_Spartan } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import type { ReactNode } from 'react'
 
-const spartan = League_Spartan({ subsets: ['latin'] })
+const spartan = Poppins({ weight: ['400', '600', '800', '300', '700', '500'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Web Designs Latam',
