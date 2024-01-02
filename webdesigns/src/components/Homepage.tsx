@@ -42,11 +42,11 @@ const Homepage: React.FC = () => {
 	return (
 		<section className="h-screen flex flex-col justify-center items-center bg-[#0c0c0c] text-white contenedor">
 			<div>
-				<h1 className="uppercase text-[145px] font-light text-center leading-none header-text-1 char">The destination</h1>
+				<h1 className="uppercase 2xl:text-[145px] text-[57px] font-light text-center leading-none header-text-1 char">The destination</h1>
 			</div>
 
 			<div>
-				<h1 className="uppercase text-[145px] text-center leading-none header-text-1 font-bold">for your next one</h1>
+				<h1 className="uppercase 2xl:text-[145px] text-[57px] text-center leading-none header-text-1 font-bold">for your next one</h1>
 			</div>
 
 			{/* <span className="text-xl mt-5 mb-10 text-white description">HAFH IS A DISCOVERY PLATFORM FOR THE MODERN TRAVELLER</span> */}

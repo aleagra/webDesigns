@@ -8,7 +8,7 @@ interface ParallaxProps {
 	baseVelocity: number
 }
 
-const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 100 }) => {
+const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 50 }) => {
 	const baseX = useMotionValue(0)
 	const { scrollY } = useScroll()
 	const scrollVelocity = useVelocity(scrollY)
@@ -24,7 +24,7 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 100 })
 
 	const directionFactor = useRef<number>(1)
 	useAnimationFrame((t, delta) => {
-		let moveBy = directionFactor.current * baseVelocity * (delta / 1000)
+		let moveBy = directionFactor.current * baseVelocity * (delta / 1500)
 
 		if (velocityFactor.get() < 0) {
 			directionFactor.current = -1
@@ -38,7 +38,7 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 100 })
 	})
 
 	return (
-		<div className="parallax text-white py-4 pt-8 text-3xl font-medium">
+		<div className="parallax text-white py-4 pt-8 2xl:text-3xl text-2xl font-medium">
 			<motion.div className="scroller" style={{ x }}>
 				<span>{children} </span>
 				<span>{children} </span>

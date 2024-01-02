@@ -3,23 +3,23 @@ import { motion } from 'framer-motion'
 
 export const Footer: React.FC = () => {
 	return (
-		<div className="flex items-end flex-wrap text-sm uppercase mt-10 lg:justify-between text-white font-light">
-			<ul className="w-[50%] lg:w-auto mt-3 overflow-hidden">
+		<div className="flex 2xl:items-end flex-wrap max-2xl:flex-col text-sm uppercase mt-10 lg:justify-between text-white font-light">
+			<ul className="w-full 2xl:w-[50%] lg:w-auto mt-3 overflow-hidden">
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
 					<span className="text-[#777777] font-bold">Hecho por:</span> Alejandro Agra y Juan Pablo Moscoloni
 				</motion.li>
 			</ul>
-			<ul className="w-[50%] lg:w-auto mt-3 overflow-hidden p-0">
+			<ul className="w-full 2xl:w-[50%] lg:w-auto mt-3 overflow-hidden p-0">
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
 					<span className="text-[#777777] font-bold">Instagram:</span> dsadasda
 				</motion.li>
 			</ul>
-			<ul className="w-[50%] lg:w-auto mt-3 overflow-hidden p-0">
+			<ul className="w-full 2xl:w-[50%] lg:w-auto mt-3 overflow-hidden p-0">
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
 					<span className="text-[#777777] font-bold">Linkeind:</span> dsadasd
 				</motion.li>
 			</ul>
-			<ul className="w-[50%] lg:w-auto mt-3 overflow-hidden p-0">
+			<ul className="w-full 2xl:w-[50%] max-2xl:text-center lg:w-auto mt-3 max-2xl:mt-10 overflow-hidden p-0">
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
 					Todos los derechos reservados
 				</motion.li>

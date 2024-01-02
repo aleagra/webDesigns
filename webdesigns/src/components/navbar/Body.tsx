@@ -30,7 +30,7 @@ const Body: React.FC<BodyProps> = ({ selectedLink, setSelectedLink }) => {
 	}
 
 	return (
-		<div className="flex flex-wrap mt-10 w-full lg:mt-20">
+		<div className="flex flex-wrap max-2xl:flex-col mt-10 w-full lg:mt-20">
 			{navigation.map((link, index): JSX.Element => {
 				return (
 					<Link key={index} href={link.href} className="text-white uppercase">

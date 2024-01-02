@@ -41,15 +41,17 @@ const SocialIcons: React.FC = () => {
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="w-full h-[80vh] text-white" id="footer">
-			<div className="flex flex-col h-full text-center justify-end items-center">
-				<span className="text-[130px] uppercase leading-none font-light">Discover</span>
-				<span className="text-[130px] uppercase font-bold leading-none">Our Wailist</span>
-				<p className="text-2xl text-gray-300 mt-3 mb-2">By signing up, you agree to receive awesome</p>
+		<footer className="w-full 2xl:h-[80vh]  text-white" id="footer">
+			<div className="flex flex-col h-full text-center pt-10 justify-end items-center">
+				<span className="xl:text-[130px] text-[65px] uppercase leading-none font-light">Discover</span>
+				<span className="xl:text-[130px] text-[65px] uppercase font-bold leading-none">Our Wailist</span>
+				<p className="2xl:text-2xl text-sm text-gray-300 mt-3 mb-2">By signing up, you agree to receive awesome</p>
 				{/* <NewsletterForm /> */}
-				<div className="w-full flex justify-between items-center mt-[150px] px-24 mb-14">
-					<p className="text-lg hover:text-black transition-colors duration-500 cursor-pointer">Volver arriba</p>
-					<p className="text-lg hover:text-black transition-colors duration-500 cursor-pointer">2023 © Todos los derechos reservados</p>
+				<div className="w-full flex justify-between max-2xl:flex-col gap-5 items-center xl:mt-[150px] mt-[75px] 2xl:px-24 mb-14">
+					<p className="2xl:text-lg text-sm hover:text-black transition-colors duration-500 cursor-pointer max-2xl:hidden">Volver arriba</p>
+					<p className="2xl:text-lg text-sm hover:text-black transition-colors duration-500 cursor-pointer">
+						2023 © Todos los derechos reservados
+					</p>
 					<SocialIcons />
 				</div>
 			</div>
