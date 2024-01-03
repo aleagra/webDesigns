@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer'
-import Homepage from '@/components/Homepage'
-import Pricing from '@/components/Pricing'
+import PricingSection from '@/components/Pricing'
+import Homepage from '@/components/homepage/Homepage'
 import { Marquee } from '@/components/marquee/Marquee'
 import Navbar from '@/components/navbar/Navbar'
 import { Projects } from '@/components/projects/projects'
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
 			<Project />
 			<Marquee />
 			<Projects />
-			<Pricing />
+			<PricingSection />
 			<Footer />
 		</>
 	)
