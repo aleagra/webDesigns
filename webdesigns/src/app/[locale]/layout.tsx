@@ -21,8 +21,6 @@ interface RootLayoutProps {
 }
 const RootLayout: React.FC<RootLayoutProps> = ({ children, params: { locale } }: RootLayoutProps) => {
 	if (!locales.includes(locale)) {
-		// Aquí asumí que tienes una función notFound() definida en algún lugar.
-		// Asegúrate de que la función notFound() esté definida y haga lo que se espera.
 		notFound()
 	}
 

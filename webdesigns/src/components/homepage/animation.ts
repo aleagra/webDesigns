@@ -36,8 +36,8 @@ const UseClient: React.FC = () => {
 			},
 		})
 
-		tl.fromTo('.description', { opacity: 0 }, { opacity: 1 }, '<')
-		tl.fromTo('.buttonn', { opacity: 0 }, { delay: 1, opacity: 1, duration: 0.7 }, '<')
+		// tl.fromto('.description', { opacity: 0 }, { opacity: 1 }, '<')
+		// tl.fromto('.buttonn', { opacity: 0 }, { delay: 1, opacity: 1, duration: 0.7 }, '<')
 	}, [])
 
 	return null
