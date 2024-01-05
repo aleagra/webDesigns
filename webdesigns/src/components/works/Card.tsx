@@ -16,36 +16,50 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 	const scale = useTransform(progress, range, [1, targetScale])
 
 	return (
-		<div ref={container} className="h-screen w-full flex items-center justify-center sticky top-20 pt-5">
+		<div ref={container} className="h-screen w-full flex items-center justify-center sticky top-20">
 			<motion.div
 				style={{
 					scale,
 					top: `calc(-5vh + ${i * 0}px)`,
 				}}
-				className="flex flex-col relative h-[650px] w-[1440px] rounded-md origin-top bg-white shadow-xl cursor-pointer"
+				className="flex flex-col relative h-[600px] w-[1280px] rounded-md origin-top bg-[#181818] text-white shadow-xl cursor-pointer"
 			>
 				<div className="h-full grid grid-cols-2 gap-12 w-full">
-					<div className="relative h-[650px] w-full p-10 grid grid-rows-2">
+					<div className="relative h-[600px] w-full p-10 py-12 grid grid-rows-2">
 						<div>
-							<h3 className="text-7xl font-medium uppercase">{title}</h3>
-							<div className="flex gap-5 items-center">
+							<h3 className="text-6xl font-medium uppercase mb-6">{title}</h3>
+							<div className="flex gap-3 items-center">
 								<Link
 									href={url}
 									target="_blank"
-									className="text-sm uppercase flex gap-3 items-center cursor-pointer px-3 border-2 border-black rounded-full bg-transparent"
+									className="text-sm uppercase flex gap-3 items-center cursor-pointer px-6 py-1.5 bg-zinc-600/20 rounded-full"
+								>
+									Next
+								</Link>
+								<Link
+									href={url}
+									target="_blank"
+									className="text-sm uppercase flex gap-3 items-center cursor-pointer px-6 py-1.5 bg-zinc-600/20 rounded-full"
+								>
+									Next
+								</Link>
+								<Link
+									href={url}
+									target="_blank"
+									className="text-sm uppercase flex gap-3 items-center cursor-pointer px-6 py-1.5 bg-zinc-600/20 rounded-full"
 								>
 									Next
 								</Link>
 							</div>
+							<p className="text-base pr-20 text-[#777777] font-medium mt-8">{description}</p>
 						</div>
 
 						<div className="flex justify-end flex-col">
-							<p className="text-base pr-20 mt-auto font-medium my-4">{description}</p>
 							<span className="flex items-center gap-1">
 								<Link
 									href={url}
 									target="_blank"
-									className="text-base uppercase flex gap-3 items-center cursor-pointer py-2 px-6 border-2 border-black rounded-full bg-transparent"
+									className="text-base uppercase flex gap-3 items-center cursor-pointer py-2.5 px-6 rounded-full text-black bg-white"
 								>
 									See more
 									<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,9 +73,9 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 						</div>
 					</div>
 
-					<div className="relative  h-[650px] rounded-r-md  overflow-hidden">
+					<div className="relative  h-[600px] rounded-r-md  overflow-hidden ">
 						<motion.div className="w-full h-full" style={{ scale: imageScale }}>
-							<Image src={src} alt="image" className="object-cover w-full h-full" width={100} height={100} />
+							<Image src={src} alt="image" className="object-cover w-full h-full z-[-1] " width={1000} height={600} />
 						</motion.div>
 					</div>
 				</div>
