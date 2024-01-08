@@ -42,7 +42,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 
 const PricingSection: React.FC = () => {
 	return (
-		<section className="bg-[#0c0c0c] 2xl:h-screen min-h-screen xl:mt-20" id="pricing">
+		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-xl:min-h-screen xl:mt-20" id="pricing">
 			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 2xl:pt-6">
 				<span className="2xl:text-[85px] text-[40px] leading-none uppercase font-light">Trusted</span>
 				<span className="2xl:text-[85px] text-[40px] leading-none uppercase font-bold">Collaborators</span>

@@ -44,23 +44,17 @@ const Homepage: React.FC = () => {
 			<div>
 				<h1 className="uppercase 2xl:text-[145px] text-[57px] font-light text-center leading-none header-text-1 char">The destination</h1>
 			</div>
-
+			<div className="w-fit border-2 border-[#777777] text-center py-3 px-6 rounded-lg my-5">
+				<p className="text-xl font-medium text-white/70 uppercase">
+					Estudio especializado en diseñar sitios webs modernos para startups con gusto
+				</p>
+			</div>
 			<div>
 				<h1 className="uppercase 2xl:text-[145px] text-[57px] text-center leading-none header-text-1 font-bold">for your next one</h1>
 			</div>
-
-			{/* <span className="text-xl mt-5 mb-10 text-white description">HAFH IS A DISCOVERY PLATFORM FOR THE MODERN TRAVELLER</span> */}
-			{/* <button className="buttonn px-12 py-3 text-base font-medium text-center transition duration-300 ease-in-out transform  border-2 hover:bg-white hover:text-black border-white rounded-full text-white bg-transparent">
-				Branding
-			</button> */}
-			{/* <marquee behavior="" direction="" scrollamount="20">
-				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
-				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
-				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
-				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
-				<span className="text-6xl text-white font-light">WEB DESING LATAM </span>
-				<span className="text-6xl text-white font-bold">ALEJANDRO AGRA</span>
-			</marquee> */}
+			<h1 className="uppercase py-4 px-8 font-medium mt-6 text-3xl rounded-lg text-center button leading-none border-2 border-[#777777]">
+				Contactanos
+			</h1>
 		</section>
 	)
 }

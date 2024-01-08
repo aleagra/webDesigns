@@ -13,18 +13,17 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 50 }) 
 	const { scrollY } = useScroll()
 	const scrollVelocity = useVelocity(scrollY)
 	const smoothVelocity = useSpring(scrollVelocity, {
-		damping: 100,
-		stiffness: 50,
+		damping: 50,
+		stiffness: 400,
 	})
 	const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
 		clamp: false,
 	})
-
 	const x = useTransform(baseX, v => `${wrap(-20, -45, v)}%`)
 
 	const directionFactor = useRef<number>(1)
 	useAnimationFrame((t, delta) => {
-		let moveBy = directionFactor.current * baseVelocity * (delta / 1500)
+		let moveBy = directionFactor.current * baseVelocity * (delta / 1000)
 
 		if (velocityFactor.get() < 0) {
 			directionFactor.current = -1
@@ -38,8 +37,8 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 50 }) 
 	})
 
 	return (
-		<div className="parallax text-white py-4 pt-8 2xl:text-3xl text-2xl font-medium">
-			<motion.div className="scroller" style={{ x }}>
+		<div className="parallax text-white py-4 pt-8 2xl:text-3xl  font-medium">
+			<motion.div className="scroller text-[90px]" style={{ x }}>
 				<span>{children} </span>
 				<span>{children} </span>
 				<span>{children} </span>
@@ -53,7 +52,8 @@ export const Marquee: React.FC = () => {
 	return (
 		<section>
 			<ParallaxText baseVelocity={-1}>
-				Framer Motion Framer Motion Framer Motion Framer Motion Framer Motion Framer Motion Framer Motion Framer Motion Motion Framer Motion
+				Nuestros proyectos / Nuestros proyectos / Nuestros proyectos / Nuestros proyectos / Nuestros proyectos / Nuestros proyectos / Nuestros
+				proyectos / Nuestros proyectos /
 			</ParallaxText>
 		</section>
 	)
