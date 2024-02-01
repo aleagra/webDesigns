@@ -16,7 +16,7 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 	const scale = useTransform(progress, range, [1, targetScale])
 
 	return (
-		<div ref={container} className="h-[90vh] w-full flex items-center justify-center sticky top-32">
+		<div ref={container} className="h-[93vh] w-full flex items-center justify-center sticky top-20">
 			<motion.div
 				style={{
 					scale,

@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
 		<div className="flex 2xl:items-end flex-wrap max-2xl:flex-col text-sm uppercase mt-10 lg:justify-between text-white font-light">
 			<ul className="w-full 2xl:w-[50%] lg:w-auto mt-3 overflow-hidden">
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-					<span className="text-[#777777] font-bold">Hecho por:</span> Alejandro Agra y Juan Pablo Moscoloni
+					<span className="text-[#777777] font-bold">Hecho por:</span> Alejandro Agra
 				</motion.li>
 			</ul>
 			<ul className="w-full 2xl:w-[50%] lg:w-auto mt-3 overflow-hidden p-0">
