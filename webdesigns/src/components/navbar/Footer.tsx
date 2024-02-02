@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export const Footer: React.FC = () => {
 	return (
-		<div className="flex 2xl:items-end flex-wrap max-2xl:flex-col text-sm uppercase mt-10 lg:justify-between text-white font-light">
+		<div className="flex xl:items-end 2xl: flex-wrap max-xl:flex-col text-sm uppercase mt-10 xl:mb-6 2xl:mb-0 lg:justify-between text-white font-light">
 			<ul className="w-full 2xl:w-[50%] lg:w-auto mt-3 overflow-hidden">
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
 					<span className="text-[#777777] font-bold">Hecho por:</span> Alejandro Agra

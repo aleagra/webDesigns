@@ -12,9 +12,9 @@ export const navigation = [
 	{ title: 'Contact', href: '#footer' },
 ]
 export const pricingData: PricingCardProps[] = [
-	{ title: 'Single page', price: 100, features: ['Up to 10 credit cards', 'Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
-	{ title: 'Premium page', price: 150, features: ['Up to 10 credit cards', 'Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
-	{ title: 'Full Stack', price: 200, features: ['Up to 10 credit cards', 'Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
+	{ title: 'Single page', price: 100, features: ['Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
+	{ title: 'Premium page', price: 150, features: ['Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
+	{ title: 'Full Stack', price: 200, features: ['Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
 ]
 export const projectData = [
 	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#4a449e' },
@@ -37,7 +37,7 @@ export const projects = [
 	{
 		title: 'Eztranslate',
 		description:
-			'This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).',
+			'This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French ',
 		src: '/work11.png',
 		link: 'https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/',
 		color: '#977F6D',
@@ -61,7 +61,7 @@ export const projects = [
 	{
 		title: 'SocialApp',
 		description:
-			'Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote. Titled ‘Beginnings’, the mesmerizing collection of images is a visual and meditative journey into the origins of regrets and the uncertainty of stepping into new unknowns.',
+			'Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote. Titled ‘Beginnings’, the mesmerizing ',
 		src: '/work9.png',
 		link: 'https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/',
 		color: '#88A28D',

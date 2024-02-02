@@ -10,7 +10,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 					<span className="text-5xl font-bold tracking-tight text-center">${price}</span>
 				</p>
 
-				<ul role="list" className="pt-2 space-y-6 text-center">
+				<ul role="list" className="pt-2 space-y-6 text-center xl:py-6">
 					<span className="text-lg text-[#777777]">What s included?</span>
 					{features.map((feature, index) => (
 						<li key={index} className="flex xl:pl-10 items-center">
@@ -42,14 +42,14 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 
 const PricingSection: React.FC = () => {
 	return (
-		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-xl:min-h-screen xl:mt-20" id="pricing">
+		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-2xl:min-h-screen xl:mt-32 2xl:mt-20" id="pricing">
 			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 2xl:pt-6">
-				<span className="2xl:text-[85px] text-[40px] leading-none uppercase font-light">Trusted</span>
-				<span className="2xl:text-[85px] text-[40px] leading-none uppercase font-bold">Collaborators</span>
+				<span className="2xl:text-[85px] xl:text-[60px] leading-none uppercase font-light">Trusted</span>
+				<span className="2xl:text-[85px] xl:text-[60px] leading-none uppercase font-bold">Collaborators</span>
 				<p className="w-[350px] text-lg text-center mt-5 text-[#777777]">We develop gorgeous and memorable projects for our clients. </p>
 			</div>
 			{/* <p className="text-xl text-gray-600 font-semibold text-center mb-3">Simple & Predictable pricing. No surprises.</p> */}
-			<div className="relative items-center mx-auto xl:w-[1440px]">
+			<div className="relative items-center mx-auto 2xl:w-[1440px] xl:px-12">
 				<div>
 					<div className="relative py-10 space-y-12 max-md:space-y-20 overflow-hidden lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-12 rounded-xl">
 						{pricingData.map((card, index) => (

@@ -22,12 +22,12 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 					scale,
 					top: `calc(-5vh + ${i * 0}px)`,
 				}}
-				className="flex flex-col relative h-[600px] w-[1280px] rounded-md origin-top bg-[#181818] text-white shadow-xl cursor-pointer"
+				className="flex flex-col relative 2xl:h-[600px] 2xl:w-[1280px] xl:w-[900px] xl:h-[450px] rounded-md origin-top bg-[#181818] text-white shadow-xl cursor-pointer"
 			>
 				<div className="h-full grid grid-cols-2 gap-12 w-full">
-					<div className="relative h-[600px] w-full p-10 py-12 grid grid-rows-2">
+					<div className="relative 2xl:h-[600px] xl:h-[450px] w-full p-10 py-12 grid grid-rows-2">
 						<div>
-							<h3 className="text-6xl font-medium uppercase mb-6">{title}</h3>
+							<h3 className="2xl:text-6xl xl:text-3xl font-medium uppercase mb-6">{title}</h3>
 							<div className="flex gap-3 items-center">
 								<Link
 									href={url}
@@ -51,7 +51,7 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 									Next
 								</Link>
 							</div>
-							<p className="text-base pr-20 text-[#777777] font-medium mt-8">{description}</p>
+							<p className="2xl:text-base xl:text-sm 2xl:pr-20 xl:pr-6 text-[#777777] font-medium mt-8">{description}</p>
 						</div>
 
 						<div className="flex justify-end flex-col">
@@ -73,7 +73,7 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 						</div>
 					</div>
 
-					<div className="relative  h-[600px] rounded-r-md  overflow-hidden ">
+					<div className="relative  2xl:h-[600px] xl:h-[450px] rounded-r-md  overflow-hidden ">
 						<motion.div className="w-full h-full" style={{ scale: imageScale }}>
 							<Image src={src} alt="image" className="object-cover w-full h-full z-[-1] " width={1000} height={600} />
 						</motion.div>

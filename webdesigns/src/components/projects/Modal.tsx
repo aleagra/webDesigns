@@ -48,7 +48,7 @@ export const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
 				variants={scaleAnimation}
 				initial="initial"
 				animate={active ? 'enter' : 'closed'}
-				className="2xl:h-[250px] 2xl:w-[300px] w-[120px] h-[120px] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center"
+				className="2xl:h-[250px] 2xl:w-[300px] xl:h-[200px] xl:w-[250px] w-[120px] h-[120px] absolute bg-white overflow-hidden pointer-events-none flex items-center justify-center"
 			>
 				<div style={{ top: index * -100 + '%' }} className="h-full w-full absolute slider">
 					{projects.map((project, index) => {

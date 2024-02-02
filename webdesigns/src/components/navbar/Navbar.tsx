@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
 	const [isActive, setIsActive] = useState<{ isActive: boolean; index?: number }>({ isActive: false, index: 0 })
 
 	return (
-		<div className="fixed w-full box-border p-8 lg:px-16 lg:pt-10 lg:pb-5 z-[20] bg-[#0c0c0c]">
+		<div className="fixed w-full box-border p-8 lg:px-16 lg:pt-10 lg:pb-5 2xl:pb-5 z-[20] bg-[#0c0c0c]">
 			<div className="flex justify-between uppercase text-xs lg:text-base font-medium relative text-white">
 				<Link href="/">Web Desings</Link>
 				<div
