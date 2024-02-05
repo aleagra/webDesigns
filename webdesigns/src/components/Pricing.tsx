@@ -3,7 +3,7 @@ import { pricingData } from '@/utils/data'
 
 const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => {
 	return (
-		<div className="relative flex flex-col p-8 bg-white/5 text-white hover:bg-white lg:rounded-lg duration-500 transition-all ease-in-out 2xl:hover:-translate-y-3 shadow-md hover:text-black pricing">
+		<div className="relative cursor-pointer flex flex-col p-8 bg-white/5 text-white hover:bg-white lg:rounded-lg duration-500 transition-all ease-in-out 2xl:hover:-translate-y-3 shadow-md hover:text-black pricing">
 			<div>
 				<h1 className="text-xl font-light  text-center">{title}</h1>
 				<p className="flex justify-center mt-4">
