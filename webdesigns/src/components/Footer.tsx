@@ -15,10 +15,10 @@ const Footer: React.FC = () => {
 	return (
 		<footer className="w-full 2xl:h-[80vh] xl:pt-20 2xl:pt-0 text-white relative" id="footer">
 			<div className="flex flex-col h-full text-center pt-10 justify-end items-center">
-				<span className="2xl:text-[130px] xl:text-[90px] text-[65px] uppercase leading-none font-light">Discover</span>
-				<span className="2xl:text-[130px] xl:text-[90px] text-[65px] uppercase font-bold leading-none">Our Wailist</span>
-				<p className="2xl:text-2xl text-xl mt-3 mb-2">By signing up, you agree to receive awesome</p>
-				<div className="w-full flex justify-between max-2xl:flex-col gap-5 items-center 2xl:mt-[150px] mt-[75px] xl:mt-[60px] 2xl:px-24 mb-14">
+				<span className="2xl:text-[130px] xl:text-[90px] text-[65px] max-md:text-[45px] uppercase leading-none font-light">Discover</span>
+				<span className="2xl:text-[130px] xl:text-[90px] text-[65px] max-md:text-[45px] uppercase font-bold leading-none">Our Wailist</span>
+				<p className="2xl:text-2xl text-xl max-md:text-base max-md:px-8 mt-3 mb-2">By signing up, you agree to receive awesome</p>
+				<div className="w-full flex justify-between max-2xl:flex-col gap-5 items-center 2xl:mt-[150px] mt-[55px] xl:mt-[60px] 2xl:px-24 mb-10">
 					<Link href="#" className="overflow-hidden cursor-pointer">
 						<div className="relative w-full h-full flex gap-2 items-center opacity-70 transition-opacity duration-300 hover:opacity-100">
 							<FaArrowUp />

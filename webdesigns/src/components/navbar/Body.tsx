@@ -35,7 +35,7 @@ const Body: React.FC<BodyProps> = ({ selectedLink, setSelectedLink }) => {
 				return (
 					<Link key={index} href={link.href} className="text-white uppercase">
 						<motion.p
-							className="m-0 flex mr-5 pt-3 font-normal text-3xl 2xl:text-[85px] lg:text-[55px] leading-none lg:pr-10 border-r-4 border-white"
+							className="m-0 flex mr-5 pt-3 font-normal text-5xl 2xl:text-[85px] lg:text-[55px] leading-none lg:pr-10 lg:border-r-4 border-white"
 							onMouseOver={() => {
 								setSelectedLink(prev => ({ ...prev, index }))
 							}}
