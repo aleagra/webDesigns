@@ -3,7 +3,7 @@ import { pricingData } from '@/utils/data'
 
 const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => {
 	return (
-		<div className="relative cursor-pointer flex flex-col p-8 max-md:mx-10 max-md:rounded-lg max-md:p-5 bg-white/5 text-white hover:bg-white lg:rounded-lg duration-500 transition-all ease-in-out 2xl:hover:-translate-y-3 shadow-md hover:text-black pricing">
+		<div className="relative cursor-pointer flex flex-col p-8 max-md:mx-10 max-xl:rounded-lg max-md:p-5 bg-white/5 text-white hover:bg-white lg:rounded-lg duration-500 transition-all ease-in-out 2xl:hover:-translate-y-3 shadow-md hover:text-black pricing">
 			<div>
 				<h1 className="text-xl max-md:text-base font-light  text-center">{title}</h1>
 				<p className="flex justify-center mt-4">
@@ -45,7 +45,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 
 const PricingSection: React.FC = () => {
 	return (
-		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-2xl:min-h-screen xl:mt-32 2xl:mt-20" id="pricing">
+		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-2xl:min-h-screen xl:mt-32 2xl:mt-20 scroll-mt-28" id="pricing">
 			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 2xl:pt-6">
 				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-light">Trusted</span>
 				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold">
@@ -56,9 +56,9 @@ const PricingSection: React.FC = () => {
 				</p>
 			</div>
 			{/* <p className="text-xl text-gray-600 font-semibold text-center mb-3">Simple & Predictable pricing. No surprises.</p> */}
-			<div className="relative items-center mx-auto 2xl:w-[1440px] xl:px-12">
+			<div className="relative items-center mx-auto 2xl:w-[1440px] md:px-12">
 				<div>
-					<div className="relative py-10 space-y-12 overflow-hidden lg:space-y-0 md:grid md:grid-cols-2  lg:grid-cols-3 lg:gap-x-12 rounded-xl">
+					<div className="relative py-10 max-md:space-y-12 md:gap-6 overflow-hidden lg:space-y-0 md:grid md:grid-cols-2  lg:grid-cols-3 lg:gap-x-12">
 						{pricingData.map((card, index) => (
 							<PricingCard key={index} {...card} />
 						))}

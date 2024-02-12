@@ -14,7 +14,9 @@ export interface ProjectCardProps {
 	targetScale: number
 	range: [number, number]
 	url: string
+	technologies: string[]
 }
+
 export interface ModalProps {
 	modal: { active: boolean; index: number }
 	projects: Array<{ src: string; color: string }>

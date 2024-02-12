@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import Link from 'next/link'
 import type { ProjectCardProps } from '@/types/interface'
 
-const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, progress, range, targetScale }) => {
+const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, progress, range, targetScale, technologies }) => {
 	const container = useRef(null)
 	const { scrollYProgress } = useScroll({
 		target: container,
@@ -22,34 +22,21 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 					scale,
 					top: `calc(-5vh + ${i * 0}px)`,
 				}}
-				className="flex flex-col relative 2xl:w-[1280px] 2xl:h-[600px] xl:w-[900px] xl:h-[450px] rounded-md origin-top bg-[#181818] text-white shadow-xl cursor-pointer"
+				className="flex flex-col relative 2xl:w-[1280px] 2xl:h-[600px] lg:w-[1000px] lg:h-[450px] rounded-md origin-top bg-[#181818] text-white shadow-xl cursor-pointer"
 			>
 				<div className="h-full grid grid-cols-2 max-md:grid-cols-1 gap-12 w-full">
-					<div className="relative 2xl:h-[600px] max-md:h-[500px] xl:h-[450px] w-full p-10 py-12 grid grid-rows-2">
+					<div className="relative 2xl:h-[600px] max-md:h-[500px] lg:h-[450px] w-full p-10 max-md:px-6 py-12 grid grid-rows-2">
 						<div>
 							<h3 className="2xl:text-6xl xl:text-3xl max-md:text-2xl max-md:text-center font-medium uppercase mb-6">{title}</h3>
 							<div className="flex gap-3 items-center max-md:justify-center">
-								<Link
-									href={url}
-									target="_blank"
-									className="text-sm uppercase flex gap-3 items-center cursor-pointer px-6 py-1.5 bg-zinc-600/20 rounded-full"
-								>
-									Next
-								</Link>
-								<Link
-									href={url}
-									target="_blank"
-									className="text-sm uppercase flex gap-3 items-center cursor-pointer px-6 py-1.5 bg-zinc-600/20 rounded-full"
-								>
-									Next
-								</Link>
-								<Link
-									href={url}
-									target="_blank"
-									className="text-sm uppercase flex gap-3 items-center cursor-pointer px-6 py-1.5 bg-zinc-600/20 rounded-full"
-								>
-									Next
-								</Link>
+								{technologies.map((tech, index) => (
+									<span
+										key={index}
+										className="text-sm uppercase flex gap-3 items-center cursor-pointer px-6 py-1.5 bg-zinc-600/20 rounded-full"
+									>
+										{tech}
+									</span>
+								))}
 							</div>
 							<p className="2xl:text-base xl:text-sm max-md:text-center 2xl:pr-20 xl:pr-6 text-[#777777] font-medium mt-8 max-md:mt-12">
 								{description}

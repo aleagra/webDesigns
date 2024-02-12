@@ -46,19 +46,12 @@ const Homepage: React.FC = () => {
 					The destination
 				</h1>
 			</div>
-			<div className="w-fit border-2 border-[#777777] text-center py-3 px-6 rounded-lg my-5 max-md:hidden">
-				<p className="text-xl max-md:text-sm  font-medium text-white/70 uppercase">
-					Estudio especializado en diseñar sitios webs modernos para startups con gusto
-				</p>
-			</div>
+
 			<div>
 				<h1 className="uppercase 2xl:text-[145px] text-[50px] max-md:my-2 text-center leading-none max-md:leading-tight header-text-1 font-bold">
 					for your next one
 				</h1>
 			</div>
-			<h1 className="uppercase py-4 px-8 font-medium mt-6 text-3xl rounded-lg text-center button leading-none border-2 border-[#777777]">
-				Contactanos
-			</h1>
 		</section>
 	)
 }

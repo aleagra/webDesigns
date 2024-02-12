@@ -12,7 +12,7 @@ const Project: React.FC = () => {
 	})
 
 	return (
-		<main ref={container} className="relative bg-[#0c0c0c]" id="proyectos">
+		<main ref={container} className="relative bg-[#0c0c0c] scroll-mt-24" id="works">
 			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 pt-6">
 				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-light">Nuestros</span>
 				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold">Trabajos</span>
@@ -33,6 +33,7 @@ const Project: React.FC = () => {
 						progress={scrollYProgress}
 						range={[i * 0.25, 1]}
 						targetScale={targetScale}
+						technologies={project.technologies}
 					/>
 				)
 			})}

@@ -1,12 +1,31 @@
 import Link from 'next/link'
-import { FaLinkedin, FaInstagram, FaWhatsapp, FaArrowUp } from 'react-icons/fa'
-
+import { BiLogoGithub } from 'react-icons/bi'
+import { FaLinkedinIn, FaArrowUp } from 'react-icons/fa'
+import { TbWorld } from 'react-icons/tb'
 const SocialIcons: React.FC = () => {
 	return (
 		<div className="text-xl font-semibold flex gap-4">
-			<FaLinkedin className="hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer" />
-			<FaInstagram className="hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer" />
-			<FaWhatsapp className="hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer" />
+			<Link
+				href="https://www.linkedin.com/in/alejandro-agra/"
+				target="_blank"
+				className='hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer"'
+			>
+				<FaLinkedinIn />
+			</Link>
+			<Link
+				href="https://github.com/aleagra"
+				target="_blank"
+				className="hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer"
+			>
+				<BiLogoGithub />
+			</Link>
+			<Link
+				href="https://ale-agra.web.app/"
+				target="_blank"
+				className="hover:scale-125 opacity-70 hover:opacity-100 transition	-all duration-500 cursor-pointer"
+			>
+				<TbWorld />
+			</Link>
 		</div>
 	)
 }
@@ -31,7 +50,7 @@ const Footer: React.FC = () => {
 						</div>
 					</Link>
 
-					<p className="2xl:text-lg text-base opacity-70 transition-colors duration-500">2023 © Todos los derechos reservados</p>
+					<p className="2xl:text-lg text-base opacity-70 transition-colors duration-500">2024 © Todos los derechos reservados</p>
 					<SocialIcons />
 				</div>
 			</div>
