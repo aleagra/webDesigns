@@ -9,7 +9,7 @@ export const Projects: React.FC = () => {
 
 	return (
 		<main
-			className="flex flex-col  2xl:h-[85vh] min-h-screen items-center max-2xl:justify-center max-2xl:mb-20 bg-[#0c0c0c] overflow-x-hidden scroll-mt-60"
+			className="flex flex-col  2xl:h-[85vh] min-h-screen items-center max-2xl:justify-center max-2xl:mb-20 bg-[#0c0c0c] scroll-mt-60"
 			id="projects"
 		>
 			<div className="w-full flex flex-col items-center justify-center 2xl:mt-20">
