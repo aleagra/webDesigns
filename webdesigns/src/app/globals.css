@@ -1,3 +1,162 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	@apply bg-[#0c0c0c];
+}
+/* Home */
+
+.lineParent {
+	overflow: hidden;
+}
+.lineChildren {
+	transform: translate(0, 500px);
+}
+
+/* About */
+.about-section p {
+	opacity: 0;
+}
+
+.about-section p > div {
+	opacity: 0;
+	transform: translateY(0px);
+}
+
+.about-section p.is-reveal {
+	opacity: 1;
+}
+
+/* Scroll */
+* {
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0px;
+	background-color: white;
+}
+
+.header-text-1 {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.char {
+	transform: translateY(115px);
+	transition: transform 0.5s;
+	opacity: 0;
+}
+.slider {
+	transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.project:hover h2 {
+	transform: translateX(-10px);
+}
+.project:hover p {
+	transform: translateX(-10px);
+}
+.project h2 {
+	transition: all 0.4s;
+}
+
+.project p {
+	transition: all 0.4s;
+	font-weight: 300;
+}
+.parallax {
+	overflow: hidden;
+	letter-spacing: -2px;
+	line-height: 0.8;
+	margin: 0;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.parallax .scroller {
+	text-transform: uppercase;
+	display: flex;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.parallax span {
+	display: block;
+	margin-right: 30px;
+}
+
+.button {
+	background-color: transparent;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.button::before {
+	content: '';
+	background-color: white;
+	width: 100%;
+	height: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition:
+		height 0.2s ease,
+		background-color 0.2s ease,
+		color 0.2s ease;
+}
+
+.button:hover {
+	color: black;
+	background-color: transparent;
+}
+
+.button:hover::before {
+	height: 100%;
+	@apply bg-white;
+}
+
+.pricing:hover .span {
+	color: black;
+}
+.pricing:hover a {
+	color: white;
+	background-color: black;
+}
+.pricing a {
+	background-color: white;
+	color: black;
+}
+
+/* ------------------------------------------- */
+
+.el:hover .perspectiveText {
+	transform: rotateX(90deg);
+}
+.el:hover .perspectiveText p:nth-of-type(1) {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.el:hover .perspectiveText p:nth-of-type(2) {
+	opacity: 1;
+}
+
+.perspectiveText {
+	transform-style: preserve-3d;
+	transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.perspectiveText p {
+	transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+	pointer-events: none;
+	text-transform: uppercase;
+}
+
+.perspectiveText p:nth-of-type(2) {
+	position: absolute;
+	transform-origin: bottom center;
+	transform: rotateX(-90deg) translateY(12px);
+	opacity: 0;
+}
