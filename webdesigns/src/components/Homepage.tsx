@@ -19,6 +19,7 @@ const Homepage: React.FC = () => {
 			opacity: 1,
 		})
 
+		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		const tl = gsap.timeline({
 			defaults: {
 				ease: 'power3.inOut',
@@ -35,8 +36,6 @@ const Homepage: React.FC = () => {
 				// },
 			},
 		})
-		tl.fromTo('.description', { opacity: 0 }, { opacity: 1 }, '<')
-		tl.fromTo('.buttonn', { opacity: 0 }, { delay: 1, opacity: 1, duration: 0.7 }, '<')
 	}, [])
 
 	return (

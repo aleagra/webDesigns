@@ -55,7 +55,7 @@ const PricingSection: React.FC = () => {
 					We develop gorgeous and memorable projects for our clients.{' '}
 				</p>
 			</div>
-			{/* <p className="text-xl text-gray-600 font-semibold text-center mb-3">Simple & Predictable pricing. No surprises.</p> */}
+
 			<div className="relative items-center mx-auto 2xl:w-[1440px] md:px-12">
 				<div>
 					<div className="relative py-10 max-md:space-y-12 md:gap-6 overflow-hidden lg:space-y-0 md:grid md:grid-cols-2  lg:grid-cols-3 lg:gap-x-12">

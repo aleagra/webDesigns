@@ -14,7 +14,7 @@ export const Projects: React.FC = () => {
 		>
 			<div className="w-full flex flex-col items-center justify-center 2xl:mt-20">
 				{projectData.map((project, index) => {
-					return <Cards index={index} title={project.title} name={project.name} setModal={setModal} key={index} />
+					return <Cards index={index} title={project.title} name={project.name} setModal={setModal} key={index} href={project.href} />
 				})}
 			</div>
 			<Modal modal={modal} projects={projectData} />

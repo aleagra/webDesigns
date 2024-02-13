@@ -1,8 +1,11 @@
 import type { CardsProps } from '@/types/interface'
+import Link from 'next/link'
 
-export const Cards: React.FC<CardsProps> = ({ index, title, setModal, name }) => {
+export const Cards: React.FC<CardsProps> = ({ index, title, setModal, name, href }) => {
 	return (
-		<div
+		<Link
+			href={href}
+			target="_blank"
 			onMouseEnter={() => {
 				setModal({ active: true, index })
 			}}
@@ -14,6 +17,6 @@ export const Cards: React.FC<CardsProps> = ({ index, title, setModal, name }) =>
 			<h2 className="2xl:text-lg text-sm">{title}</h2>
 			<h2 className="text-center 2xl:text-xl text-xs max-xl:hidden">Website of the Day</h2>
 			<h2 className="text-end 2xl:text-base text-xs">Design & Development</h2>
-		</div>
+		</Link>
 	)
 }

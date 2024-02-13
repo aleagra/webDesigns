@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
 						</div>
 					</Link>
 
-					<p className="2xl:text-lg text-base opacity-70 transition-colors duration-500">2024 © Todos los derechos reservados</p>
+					<p className="2xl:text-lg text-base opacity-70 transition-colors duration-500">2024 © All rights reserved</p>
 					<SocialIcons />
 				</div>
 			</div>
