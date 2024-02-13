@@ -19,6 +19,7 @@ const UseClient: React.FC = () => {
 			opacity: 1,
 		})
 
+		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		const tl = gsap.timeline({
 			defaults: {
 				ease: 'power3.inOut',
