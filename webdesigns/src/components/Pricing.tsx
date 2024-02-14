@@ -32,10 +32,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 				</ul>
 			</div>
 			<div className="mt-6 rounded-lg">
-				<button
-					href="#"
-					className="w-full items-center block px-10 py-2.5 max-md:py-1.5 max-md:w-fit max-md:my-3 max-md:mx-auto text-base font-medium text-center text-black rounded-xl bg-white"
-				>
+				<button className="w-full items-center block px-10 py-2.5 max-md:py-1.5 max-md:w-fit max-md:my-3 max-md:mx-auto text-base font-medium text-center text-black rounded-xl bg-white">
 					Get Started
 				</button>
 			</div>
