@@ -11,7 +11,7 @@ interface IndexProps {
 
 export const Index: React.FC<IndexProps> = ({ isActive, setIsActive }) => {
 	return (
-		<motion.div variants={height} initial="initial" animate="enter" exit="exit" className="overflow-hidden">
+		<motion.div variants={height} initial="initial" animate="enter" exit="exit" className="overflow">
 			<div className="flex gap-12 2xl:mb-20 lg:mb-0 lg:justify-center w-full mx-auto">
 				<div className="flex flex-col justify-between">
 					<Body selectedLink={isActive} setSelectedLink={setIsActive} />

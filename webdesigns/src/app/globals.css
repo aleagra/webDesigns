@@ -160,3 +160,9 @@ body {
 	transform: rotateX(-90deg) translateY(12px);
 	opacity: 0;
 }
+img {
+	pointer-events: none;
+}
+.overflow {
+	overflow: hidden;
+}

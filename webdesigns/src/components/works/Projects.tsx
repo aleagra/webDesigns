@@ -14,9 +14,13 @@ const Project: React.FC = () => {
 	return (
 		<main ref={container} className="relative bg-[#0c0c0c] scroll-mt-24" id="works">
 			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 pt-6">
-				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-light">Nuestros</span>
-				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold">Trabajos</span>
-				<p className="w-[350px] text-lg max-md:px-3 text-center mt-5 text-[#777777]">
+				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-light select-none">
+					Our
+				</span>
+				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold select-none">
+					developments
+				</span>
+				<p className="w-[350px] text-lg max-md:px-3 text-center mt-5 text-[#777777] select-none">
 					We develop gorgeous and memorable projects for our clients.{' '}
 				</p>
 			</div>

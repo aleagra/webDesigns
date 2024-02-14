@@ -41,13 +41,13 @@ const Homepage: React.FC = () => {
 	return (
 		<section className="h-screen flex flex-col justify-center items-center max-md:px-12 bg-[#0c0c0c] text-white contenedor">
 			<div>
-				<h1 className="uppercase 2xl:text-[145px] text-[50px] max-md:my-2 font-light text-center leading-none max-md:leading-tight header-text-1 char">
+				<h1 className="uppercase 2xl:text-[145px] text-[50px] max-md:text-[40px] max-md:my-2 font-light text-center leading-none max-md:leading-tight header-text-1 char select-none">
 					The destination
 				</h1>
 			</div>
 
 			<div>
-				<h1 className="uppercase 2xl:text-[145px] text-[50px] max-md:my-2 text-center leading-none max-md:leading-tight header-text-1 font-bold">
+				<h1 className="uppercase 2xl:text-[145px] text-[50px] max-md:text-[40px] max-md:my-2 text-center leading-none max-md:leading-tight header-text-1 font-bold select-none">
 					for your next one
 				</h1>
 			</div>

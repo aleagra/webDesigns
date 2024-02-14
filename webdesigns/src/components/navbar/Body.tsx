@@ -28,6 +28,15 @@ const Body: React.FC<BodyProps> = ({ selectedLink, setSelectedLink }) => {
 		})
 		return chars
 	}
+	const onClick = (): void => {
+		setSelectedLink({ isActive: !selectedLink.isActive })
+
+		if (!selectedLink.isActive) {
+			document.body.style.overflowY = 'hidden'
+		} else {
+			document.body.style.overflowY = 'auto'
+		}
+	}
 
 	return (
 		<div className="flex flex-wrap max-xl:flex-col mt-10 w-full lg:mt-20">
@@ -44,9 +53,7 @@ const Body: React.FC<BodyProps> = ({ selectedLink, setSelectedLink }) => {
 							}}
 							variants={blur}
 							animate={selectedLink.index !== undefined && selectedLink.index !== index ? 'open' : 'closed'}
-							onClick={() => {
-								setSelectedLink({ isActive: false, index })
-							}}
+							onClick={onClick}
 						>
 							{getChars(link.title)}
 						</motion.p>

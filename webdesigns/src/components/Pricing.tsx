@@ -45,14 +45,12 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 
 const PricingSection: React.FC = () => {
 	return (
-		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-2xl:min-h-screen xl:mt-32 2xl:mt-20 scroll-mt-28" id="pricing">
+		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-2xl:min-h-screen xl:mt-32 2xl:mt-20 scroll-mt-28 select-none" id="pricing">
 			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 2xl:pt-6">
-				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-light">Trusted</span>
-				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold">
-					Collaborators
-				</span>
+				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-light">Our</span>
+				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold">Princing</span>
 				<p className="w-[350px] text-lg max-md:px-3 text-center mt-5 text-[#777777]">
-					We develop gorgeous and memorable projects for our clients.{' '}
+					Experience the perfect blend of creativity and functionality
 				</p>
 			</div>
 
