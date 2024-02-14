@@ -16,7 +16,7 @@ interface RootLayoutProps {
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
 	return (
-		<html lang="en">
+		<html lang="en" className="no-drag select-none">
 			<body className={spartan.className}>{children}</body>
 		</html>
 	)

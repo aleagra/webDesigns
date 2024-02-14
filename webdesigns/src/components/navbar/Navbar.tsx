@@ -21,12 +21,12 @@ const Navbar: React.FC = () => {
 	return (
 		<div className="fixed w-full box-border p-8 lg:px-16 lg:pt-10 lg:pb-5 2xl:pb-5 z-[20] bg-[#0c0c0c]">
 			<div className="flex justify-between uppercase text-xs lg:text-base font-medium relative text-white">
-				<Link href="/" className="overflow-hidden cursor-pointer" onClick={onClick}>
-					<div className="relative w-full h-full">
+				<Link href="/" className="overflow-hidden cursor-pointer no-drag" onClick={onClick}>
+					<div className="relative w-full h-full select-none">
 						<div className="el text-white w-full h-full bg-[#0c0c0c]">
-							<div className="perspectiveText flex flex-col justify-center items-center h-full w-full">
-								<p className="m-0 p-0">Web Desings</p>
-								<p className="m-0 p-0">Web Desings</p>
+							<div className="perspectiveText flex flex-col justify-center items-center h-full w-full select-none">
+								<p className="m-0 p-0 select-none">Web Desings</p>
+								<p className="m-0 p-0 select-none">Web Desings</p>
 							</div>
 						</div>
 					</div>
@@ -35,14 +35,14 @@ const Navbar: React.FC = () => {
 					<div className="relative flex items-center">
 						<motion.div
 							variants={opacity}
-							className={`absolute overflow-hidden right-0 opacity-0 ${!isActive.isActive ? 'z-10' : ''}`}
+							className={`absolute overflow-hidden right-0 opacity-0 select-none ${!isActive.isActive ? 'z-10' : ''}`}
 							animate={!isActive.isActive ? 'open' : 'closed'}
 						>
-							<div className="relative w-full h-full">
+							<div className="relative w-full h-full select-none">
 								<div className="el text-white w-full h-full bg-[#0c0c0c]">
-									<div className="perspectiveText flex flex-col justify-center items-center h-full w-full">
-										<p className="m-0 p-0">Menu</p>
-										<p className="m-0 p-0">Menu</p>
+									<div className="perspectiveText flex flex-col justify-center items-center h-full w-full select-none">
+										<p className="m-0 p-0 select-none">Menu</p>
+										<p className="m-0 p-0 select-none">Menu</p>
 									</div>
 								</div>
 							</div>

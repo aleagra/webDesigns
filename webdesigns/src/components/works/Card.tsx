@@ -51,7 +51,7 @@ const Card: React.FC<ProjectCardProps> = ({ i, description, src, url, title, pro
 								<Link
 									href={url}
 									target="_blank"
-									className="text-base max-md:mx-auto uppercase flex gap-3 items-center cursor-pointer py-2.5 px-6 rounded-full text-black bg-white"
+									className="text-base max-md:mx-auto uppercase flex gap-3 items-center cursor-pointer py-2.5 px-6 rounded-full text-black bg-white no-drag"
 								>
 									See more
 									<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">

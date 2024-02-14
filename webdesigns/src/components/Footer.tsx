@@ -4,25 +4,25 @@ import { FaLinkedinIn, FaArrowUp } from 'react-icons/fa'
 import { TbWorld } from 'react-icons/tb'
 const SocialIcons: React.FC = () => {
 	return (
-		<div className="text-xl font-semibold flex gap-4">
+		<div className="text-xl font-semibold flex gap-4 ">
 			<Link
 				href="https://www.linkedin.com/in/alejandro-agra/"
 				target="_blank"
-				className='hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer"'
+				className="hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer no-drag"
 			>
 				<FaLinkedinIn />
 			</Link>
 			<Link
 				href="https://github.com/aleagra"
 				target="_blank"
-				className="hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer"
+				className="hover:scale-125 opacity-70 hover:opacity-100 transition-all duration-500 cursor-pointer no-drag"
 			>
 				<BiLogoGithub />
 			</Link>
 			<Link
 				href="https://ale-agra.web.app/"
 				target="_blank"
-				className="hover:scale-125 opacity-70 hover:opacity-100 transition	-all duration-500 cursor-pointer"
+				className="hover:scale-125 opacity-70 hover:opacity-100 transition	-all duration-500 cursor-pointer no-drag"
 			>
 				<TbWorld />
 			</Link>
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
 					Contact us and let s bring your vision to life
 				</p>
 				<div className="w-full flex justify-between max-2xl:flex-col gap-5 items-center 2xl:mt-[150px] mt-[55px] xl:mt-[60px] 2xl:px-24 mb-10">
-					<Link href="#" className="overflow-hidden cursor-pointer">
+					<Link href="#" className="overflow-hidden cursor-pointer no-drag">
 						<div className="relative w-full h-full flex gap-2 items-center opacity-70 transition-opacity duration-300 hover:opacity-100">
 							<FaArrowUp />
 							<div className="el text-white w-full h-full bg-[#0c0c0c]">

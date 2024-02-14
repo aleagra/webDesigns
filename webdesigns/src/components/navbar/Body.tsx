@@ -39,10 +39,10 @@ const Body: React.FC<BodyProps> = ({ selectedLink, setSelectedLink }) => {
 	}
 
 	return (
-		<div className="flex flex-wrap max-xl:flex-col mt-10 w-full lg:mt-20">
+		<div className="flex flex-wrap max-xl:flex-col mt-10 w-full lg:mt-20 select-none">
 			{navigation.map((link, index): JSX.Element => {
 				return (
-					<Link key={index} href={link.href} className="text-white uppercase">
+					<Link key={index} href={link.href} className="text-white uppercase no-drag">
 						<motion.p
 							className="m-0 flex mr-5 pt-3 font-normal text-5xl 2xl:text-[85px] lg:text-[55px] leading-none lg:pr-10 lg:border-r-4 border-white"
 							onMouseOver={() => {
