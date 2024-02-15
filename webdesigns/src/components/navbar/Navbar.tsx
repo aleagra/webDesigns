@@ -18,10 +18,17 @@ const Navbar: React.FC = () => {
 		}
 	}
 
+	const onClickHome = (): void => {
+		if (isActive.isActive) {
+			setIsActive({ isActive: !isActive.isActive })
+			document.body.style.overflowY = 'auto'
+		}
+	}
+
 	return (
 		<div className="fixed w-full box-border p-8 lg:px-16 lg:pt-10 lg:pb-5 2xl:pb-5 z-[20] bg-[#0c0c0c]">
 			<div className="flex justify-between uppercase text-xs lg:text-base font-medium relative text-white">
-				<Link href="/" className="overflow-hidden cursor-pointer no-drag" onClick={onClick}>
+				<Link href="/" className="overflow-hidden cursor-pointer no-drag" onClick={onClickHome}>
 					<div className="relative w-full h-full select-none">
 						<div className="el text-white w-full h-full bg-[#0c0c0c]">
 							<div className="perspectiveText flex flex-col justify-center items-center h-full w-full select-none">
