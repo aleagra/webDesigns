@@ -12,16 +12,31 @@ export const navigation = [
 	{ title: 'Contact', href: '#footer' },
 ]
 export const pricingData: PricingCardProps[] = [
-	{ title: 'Single page', price: 100, features: ['Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
-	{ title: 'Premium page', price: 150, features: ['Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
-	{ title: 'Full Stack', price: 200, features: ['Up to 1,000 credits', 'Tacky wallet', 'Personal profile only'] },
+	{ title: 'Single page', price: 100, features: ['3 Sections', 'Web Hosting Premium', 'SSL Certificate (Security)', 'Responsive Design'] },
+	{
+		title: 'Premium page',
+		price: 150,
+		features: ['5 Sections', 'Web Hosting Premium', 'SSL Certificate (Security)', 'Responsive Design', 'Integrated WhatsApp'],
+	},
+	{
+		title: 'Ecommerce',
+		price: 200,
+		features: [
+			'+5 Sections',
+			'Web Hosting Premium',
+			'SSL Certificate (Security)',
+			'Responsive Design',
+			'Unlimited products and sales',
+			'All payment methods',
+		],
+	},
 ]
 export const projectData = [
 	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#4a449e', href: 'https://cryptowave.web.app/' },
 	{ title: 'Eztranslate', src: '/Eztranslate.webp', name: 'Alejandro Agra', color: '#122040', href: 'https://eztranslate.netlify.app/' },
 	{ title: 'SocialApp', src: '/SocialApp.webp', name: 'Alejandro Agra', color: '#ff595e', href: 'https://social-application.web.app/' },
 	{ title: 'Weatherme', src: '/Weatherme.webp', name: 'Alejandro Agra', color: '#3b5bb5', href: 'https://weather-me.web.app/' },
-	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#4a449e', href: 'https://cryptowave.web.app/S' },
+	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#4a449e', href: 'https://cryptowave.web.app/' },
 	{ title: 'Eztranslate', src: '/Eztranslate.webp', name: 'Alejandro Agra', color: '#122040', href: 'https://eztranslate.netlify.app/' },
 	{ title: 'SocialApp', src: '/SocialApp.webp', name: 'Alejandro Agra', color: '#ff595e', href: 'https://social-application.web.app/' },
 ]
@@ -29,47 +44,39 @@ export const projects = [
 	{
 		title: 'CryptoWave',
 		description:
-			'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
-		src: '/work.jpg',
-		link: 'https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/',
+			'A platform dedicated to cryptocurrencies, a virtual space designed to provide you with clear and accurate information about digital currencies. Explore detailed price listings and real-time conversions, all in one place.',
+		src: '/work.webp',
+		link: 'https://cryptowave.web.app/',
 		color: '#BBACAF',
 		technologies: ['next', 'react', 'tailwind'],
 	},
 	{
 		title: 'Eztranslate',
 		description:
-			'This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French ',
-		src: '/work11.png',
-		link: 'https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/',
+			'Explore our language translation platform. Delve into detailed translations and real-time updates, all in one place. Stay informed about language options with our intuitive website, your reliable ally for effective communication and overcoming language barriers.',
+		src: '/work11.webp',
+		link: 'https://eztranslate.netlify.app/',
 		color: '#977F6D',
-		technologies: ['next', 'react', 'tailwind'],
+		technologies: ['next', 'typescript', 'tailwind'],
 	},
-	{
-		title: 'Zissou',
-		description:
-			'Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.',
-		src: '/work10.jpg',
-		link: 'https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/',
-		color: '#C2491D',
-		technologies: ['next', 'react', 'tailwind'],
-	},
+
 	{
 		title: 'Weatherme',
 		description:
-			'The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.',
-		src: '/work8.jpg',
-		link: 'https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/',
+			'Explore our weather platform, a virtual space designed to provide you with the most accurate and easy-to-understand meteorological information. Delve into detailed forecasts and real-time updates, all in one place. Stay informed about weather conditions with our intuitive website, your reliable ally to plan your days and be prepared for any atmospheric changes.',
+		src: '/work10.webp',
+		link: 'https://weather-me.web.app/',
 		color: '#B62429',
-		technologies: ['next', 'react', 'tailwind'],
+		technologies: ['react', 'tailwind'],
 	},
 	{
 		title: 'SocialApp',
 		description:
-			'Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote. Titled ‘Beginnings’, the mesmerizing ',
-		src: '/work9.png',
-		link: 'https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/',
+			'An exciting social network built from the ground up using React and Node.js. Immerse yourself in this distinctive platform where interaction and connection become straightforward and captivating. Enjoy an intuitive experience, courtesy of React power, while Node.js propels the resilience and speed of our network.',
+		src: '/work9.webp',
+		link: 'https://social-application.web.app/',
 		color: '#88A28D',
-		technologies: ['next', 'react', 'tailwind'],
+		technologies: ['next', 'react', 'nodeJs'],
 	},
 ]
 export const skills = [
