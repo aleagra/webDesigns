@@ -47,8 +47,7 @@ const Navbar: React.FC = () => {
 						>
 							<div className="relative w-full h-full select-none">
 								<div className="el text-white w-full h-full bg-[#0c0c0c]">
-									<div className="perspectiveText flex flex-col justify-center items-center h-full w-full select-none">
-										<p className="m-0 p-0 select-none">Menu</p>
+									<div className=" flex flex-col justify-center items-center h-full w-full select-none">
 										<p className="m-0 p-0 select-none">Menu</p>
 									</div>
 								</div>
@@ -61,8 +60,7 @@ const Navbar: React.FC = () => {
 						>
 							<div className="relative w-full h-full">
 								<div className="el text-white w-full h-full bg-[#0c0c0c]">
-									<div className="perspectiveText flex flex-col justify-center items-center h-full w-full">
-										<p className="m-0 p-0">Close</p>
+									<div className=" flex flex-col justify-center items-center h-full w-full">
 										<p className="m-0 p-0">Close</p>
 									</div>
 								</div>
