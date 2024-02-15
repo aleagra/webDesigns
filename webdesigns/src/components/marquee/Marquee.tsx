@@ -52,7 +52,7 @@ export const Marquee: React.FC = () => {
 	return (
 		<section className="xl:mb-[3rem] 2xl:mb-0">
 			<ParallaxText baseVelocity={-1}>
-				Our projects / Our projects / Our projects / Our projects / Our projects / Our projects / NuesOur projects / Our projects /
+				Our projects / Our projects / Our projects / Our projects / Our projects / Our projects / Our projects / Our projects /
 			</ParallaxText>
 		</section>
 	)
