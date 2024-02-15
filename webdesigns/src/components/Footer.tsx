@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaArrowUp } from 'react-icons/fa'
 import { TbWorld } from 'react-icons/tb'
 const SocialIcons: React.FC = () => {
 	return (
-		<div className="text-xl font-semibold flex gap-4 ">
+		<div className="text-xl font-semibold flex gap-4">
 			<Link
 				href="https://www.linkedin.com/in/alejandro-agra/"
 				target="_blank"

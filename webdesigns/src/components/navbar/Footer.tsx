@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
 			</ul>
 			<ul className="w-full 2xl:w-[25%] 2xl:text-center lg:w-auto mt-3 overflow-hidden p-0">
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
-					<span className="text-[#777777] font-bold">Linkeind:</span>{' '}
+					<span className="text-[#777777] font-bold">Linkedin:</span>{' '}
 					<Link
 						href="https://www.linkedin.com/in/alejandro-agra/"
 						target="_blank"

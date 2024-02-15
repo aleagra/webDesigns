@@ -10,7 +10,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 					<span className="text-5xl max-md:text-3xl font-bold tracking-tight text-center">${price}</span>
 				</p>
 
-				<ul role="list" className="pt-2 space-y-6 text-center xl:py-6">
+				<ul role="list" className="pt-2 space-y-6 text-center xl:pt-4 xl:pb-8">
 					<span className="text-lg max-md:text-base text-[#777777]">What s included?</span>
 					{features.map((feature, index) => (
 						<li key={index} className="flex xl:pl-10 items-center max-md:px-10">
@@ -31,7 +31,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 					))}
 				</ul>
 			</div>
-			<div className="mt-6 rounded-lg">
+			<div className="mt-auto rounded-lg">
 				<button className="w-full items-center block px-10 py-2.5 max-md:py-1.5 max-md:w-fit max-md:my-3 max-md:mx-auto text-base font-medium text-center text-black rounded-xl bg-white">
 					Get Started
 				</button>
@@ -45,7 +45,7 @@ const PricingSection: React.FC = () => {
 		<section className="bg-[#0c0c0c] 2xl:h-[85vh] max-2xl:min-h-screen xl:mt-32 2xl:mt-20 scroll-mt-28 select-none" id="pricing">
 			<div className="my-4 flex flex-col items-center mx-auto text-white text-3xl border-gray-500 2xl:pt-6">
 				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-light">Our</span>
-				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold">Princing</span>
+				<span className="2xl:text-[85px] xl:text-[60px] md:text-[50px] max-md:text-[35px] leading-none uppercase font-bold">Pricing</span>
 				<p className="w-[350px] text-lg max-md:px-3 text-center mt-5 text-[#777777]">
 					Experience the perfect blend of creativity and functionality
 				</p>

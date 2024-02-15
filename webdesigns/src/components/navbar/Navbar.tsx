@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
 					<div className="relative w-full h-full select-none">
 						<div className="el text-white w-full h-full bg-[#0c0c0c]">
 							<div className="perspectiveText flex flex-col justify-center items-center h-full w-full select-none">
-								<p className="m-0 p-0 select-none">Web Desings</p>
-								<p className="m-0 p-0 select-none">Web Desings</p>
+								<p className="m-0 p-0 select-none">Web Designs</p>
+								<p className="m-0 p-0 select-none">Web Designs</p>
 							</div>
 						</div>
 					</div>
