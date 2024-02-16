@@ -10,7 +10,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, features }) => 
 					<span className="text-5xl max-md:text-3xl font-bold tracking-tight text-center">${price}</span>
 				</p>
 
-				<ul role="list" className="pt-2 space-y-6 text-center xl:pt-4 xl:pb-8">
+				<ul role="list" className="pt-2 space-y-6 text-center xl:pt-4 xl:pb-8 max-md:pb-6">
 					<span className="text-lg max-md:text-base text-[#777777]">What s included?</span>
 					{features.map((feature, index) => (
 						<li key={index} className="flex xl:pl-10 items-center max-md:px-10">
