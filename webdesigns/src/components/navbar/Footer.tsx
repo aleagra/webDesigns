@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
 				<motion.li custom={[0.3, 0]} variants={translate} initial="initial" animate="enter" exit="exit">
 					<span className="text-[#777777] font-bold">Portfolio: </span>
 					<Link
-						href="https://ale-agra.web.app/"
+						href="https://ale-agra.vercel.app/es"
 						target="_blank"
 						className="opacity-70 hover:opacity-100 transition-opacity duration-300 ease-out"
 					>

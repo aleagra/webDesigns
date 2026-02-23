@@ -20,7 +20,7 @@ const SocialIcons: React.FC = () => {
 				<BiLogoGithub />
 			</Link>
 			<Link
-				href="https://ale-agra.web.app/"
+				href="https://ale-agra.vercel.app/es"
 				target="_blank"
 				className="hover:scale-125 opacity-70 hover:opacity-100 transition	-all duration-500 cursor-pointer no-drag"
 			>
