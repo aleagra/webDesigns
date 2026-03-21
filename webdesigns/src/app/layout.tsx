@@ -6,6 +6,7 @@ import type { ReactNode } from 'react'
 const spartan = Poppins({ weight: ['400', '600', '800', '300', '700', '500'], subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://web-designs-qudemyt2c-aleagras-projects.vercel.app'),
 	title: 'Web Designs Latam | Premium Digital Agency',
 	description: 'Web Designs Latam is a premium digital design agency crafting stunning websites, digital experiences and creative solutions for ambitious brands worldwide.',
 	keywords: ['web design', 'digital agency', 'web development', 'UI/UX', 'Next.js'],
