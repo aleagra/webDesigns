@@ -37,8 +37,8 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 50 }) 
 	})
 
 	return (
-		<div className="parallax text-white py-4 pt-8 2xl:text-3xl  font-medium">
-			<motion.div className="scroller 2xl:text-[90px] xl:text-[60px] max-lg:text-[45px] select-none" style={{ x }}>
+		<div className="parallax text-white py-4 pt-8 font-medium">
+			<motion.div className="scroller text-[40px] md:text-[50px] xl:text-[70px] 2xl:text-[90px] select-none" style={{ x }}>
 				<span>{children} </span>
 				<span>{children} </span>
 				<span>{children} </span>
@@ -50,10 +50,10 @@ const ParallaxText: React.FC<ParallaxProps> = ({ children, baseVelocity = 50 }) 
 
 export const Marquee: React.FC = () => {
 	return (
-		<section className="xl:mb-[3rem] 2xl:mb-0">
-			<ParallaxText baseVelocity={-1}>
-				Our projects / Our projects / Our projects / Our projects / Our projects / Our projects / Our projects / Our projects /
+		<div className="py-6 md:py-8 overflow-hidden">
+			<ParallaxText baseVelocity={-2}>
+				SELECTED WORKS ✦ DIGITAL EXPERIENCES ✦ CREATIVE SOLUTIONS ✦ 
 			</ParallaxText>
-		</section>
+		</div>
 	)
 }

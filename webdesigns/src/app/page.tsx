@@ -1,11 +1,11 @@
-import Footer from '@/components/Footer'
-import Homepage from '@/components/Homepage'
-import Pricing from '@/components/Pricing'
-import { Marquee } from '@/components/marquee/Marquee'
+import dynamic from 'next/dynamic'
+import Homepage from '@/components/homepage/Homepage'
 import Navbar from '@/components/navbar/Navbar'
-import { Projects } from '@/components/projects/Projects'
 
-import Project from '@/components/works/Projects'
+const Project = dynamic(() => import('@/components/works/Projects'), { ssr: false })
+const Projects = dynamic(() => import('@/components/projects/Projects').then(m => ({ default: m.Projects })), { ssr: false })
+const Pricing = dynamic(() => import('@/components/pricing/Pricing'), { ssr: false })
+const Footer = dynamic(() => import('@/components/footer/Footer'), { ssr: false })
 
 const Home: React.FC = () => {
 	return (
@@ -13,7 +13,6 @@ const Home: React.FC = () => {
 			<Navbar />
 			<Homepage />
 			<Project />
-			<Marquee />
 			<Projects />
 			<Pricing />
 			<Footer />

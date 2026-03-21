@@ -42,41 +42,40 @@ export const projectData = [
 ]
 export const projects = [
 	{
-		title: 'CryptoWave',
+		title: 'Lumina FinTech',
 		description:
-			'A platform dedicated to cryptocurrencies, a virtual space designed to provide you with clear and accurate information about digital currencies. Explore detailed price listings and real-time conversions, all in one place.',
-		src: '/work.webp',
-		link: 'https://cryptowave.web.app/',
-		color: '#BBACAF',
-		technologies: ['next', 'react', 'tailwind'],
-	},
-	{
-		title: 'Eztranslate',
-		description:
-			'Explore our language translation platform. Delve into detailed translations and real-time updates, all in one place. Stay informed about language options with our intuitive website, your reliable ally for effective communication and overcoming language barriers.',
-		src: '/work11.webp',
-		link: 'https://eztranslate.netlify.app/',
-		color: '#977F6D',
-		technologies: ['next', 'typescript', 'tailwind'],
-	},
-
-	{
-		title: 'Weatherme',
-		description:
-			'Explore our weather platform, a virtual space designed to provide you with the most accurate and easy-to-understand meteorological information. Delve into detailed forecasts and real-time updates, all in one place. Stay informed about weather conditions with our intuitive website, your reliable ally to plan your days and be prepared for any atmospheric changes.',
+			'A next-generation digital banking platform focused on frictionless experiences. We introduced real-time secure trading dashboards and an intuitive multi-currency ecosystem that increased user retention by 300%.',
 		src: '/work10.webp',
-		link: 'https://weather-me.web.app/',
-		color: '#B62429',
-		technologies: ['react', 'tailwind'],
+		link: '#',
+		color: '#1a1b26',
+		technologies: ['Next.js', 'React', 'Tailwind', 'Web3'],
 	},
 	{
-		title: 'SocialApp',
+		title: 'Aura Boutique',
 		description:
-			'An exciting social network built from the ground up using React and Node.js. Immerse yourself in this distinctive platform where interaction and connection become straightforward and captivating. Enjoy an intuitive experience, courtesy of React power, while Node.js propels the resilience and speed of our network.',
+			'An immersive, headless e-commerce experience tailored for luxury fashion. We achieved lightning-fast loading speeds and editorial transitions, maximizing conversion rates globally.',
+		src: '/work11.webp',
+		link: '#',
+		color: '#2d2b2a',
+		technologies: ['Next.js', 'TypeScript', 'Shopify', 'Framer'],
+	},
+	{
+		title: 'Nexus Analytics',
+		description:
+			'An enterprise-grade SaaS dashboard for big data visualization. We translated complex data streams into beautifully clean, readable predictive models for rapid decision-making.',
 		src: '/work9.webp',
-		link: 'https://social-application.web.app/',
-		color: '#88A28D',
-		technologies: ['next', 'react', 'nodeJs'],
+		link: '#',
+		color: '#0f172a',
+		technologies: ['React', 'Node.js', 'D3.js', 'GraphQL'],
+	},
+	{
+		title: 'Horizon Estate',
+		description:
+			'A premium digital storefront for a modern architectural firm. We leveraged smooth parallax effects and ultra-high-resolution property tours to establish their industry authority.',
+		src: '/work.webp',
+		link: '#',
+		color: '#27272a',
+		technologies: ['Next.js', 'WebGL', 'Tailwind', 'Sanity'],
 	},
 ]
 export const skills = [

@@ -30,21 +30,15 @@ const Body: React.FC<BodyProps> = ({ selectedLink, setSelectedLink }) => {
 	}
 	const onClick = (): void => {
 		setSelectedLink({ isActive: !selectedLink.isActive })
-
-		if (!selectedLink.isActive) {
-			document.body.style.overflowY = 'hidden'
-		} else {
-			document.body.style.overflowY = 'auto'
-		}
 	}
 
 	return (
-		<div className="flex flex-wrap max-xl:flex-col mt-10 w-full lg:mt-20 select-none">
+		<div className="flex flex-wrap max-xl:flex-col mt-10 w-full lg:mt-16 select-none px-4 md:px-8">
 			{navigation.map((link, index): JSX.Element => {
 				return (
 					<Link key={index} href={link.href} className="text-white uppercase no-drag">
 						<motion.p
-							className="m-0 flex mr-5 pt-3 font-normal text-5xl 2xl:text-[85px] lg:text-[55px] leading-none lg:pr-10 lg:border-r-4 border-white"
+							className="m-0 flex mr-6 pt-2 font-light tracking-[-0.03em] text-5xl 2xl:text-[85px] lg:text-[55px] leading-[1.1] lg:pr-10 lg:border-r lg:border-white/20"
 							onMouseOver={() => {
 								setSelectedLink(prev => ({ ...prev, index }))
 							}}

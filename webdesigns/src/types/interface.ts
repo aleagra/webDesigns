@@ -19,7 +19,7 @@ export interface ProjectCardProps {
 
 export interface ModalProps {
 	modal: { active: boolean; index: number }
-	projects: Array<{ src: string; color: string }>
+	projects: Array<{ src: string; color: string; title?: string }>
 }
 export interface CardsProps {
 	index: number

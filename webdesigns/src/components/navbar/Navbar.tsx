@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { background, opacity } from './anim'
 import { Index } from './Index'
@@ -8,29 +8,33 @@ import { Index } from './Index'
 const Navbar: React.FC = () => {
 	const [isActive, setIsActive] = useState<{ isActive: boolean; index?: number }>({ isActive: false, index: 0 })
 
-	const onClick = (): void => {
-		setIsActive({ isActive: !isActive.isActive })
-
-		if (!isActive.isActive) {
+	useEffect(() => {
+		if (isActive.isActive) {
 			document.body.style.overflowY = 'hidden'
 		} else {
 			document.body.style.overflowY = 'auto'
 		}
+		return () => {
+			document.body.style.overflowY = 'auto'
+		}
+	}, [isActive.isActive])
+
+	const onClick = (): void => {
+		setIsActive({ isActive: !isActive.isActive })
 	}
 
 	const onClickHome = (): void => {
 		if (isActive.isActive) {
-			setIsActive({ isActive: !isActive.isActive })
-			document.body.style.overflowY = 'auto'
+			setIsActive({ isActive: false })
 		}
 	}
 
 	return (
-		<div className="fixed w-full box-border p-8 lg:px-16 lg:pt-10 lg:pb-5 2xl:pb-5 z-[20] bg-[#0c0c0c]">
-			<div className="flex justify-between uppercase text-xs lg:text-base font-medium relative text-white">
+		<div className="fixed w-full box-border px-8 py-5 lg:px-16 lg:py-6 z-[20] backdrop-blur-md bg-[#0c0c0c]/80 border-b border-white/[0.06]">
+			<div className="flex justify-between items-center w-full max-w-[1440px] mx-auto uppercase text-sm lg:text-base font-bold tracking-[-0.03em] relative text-white">
 				<Link href="/" className="overflow-hidden cursor-pointer no-drag" onClick={onClickHome}>
 					<div className="relative w-full h-full select-none">
-						<div className="el text-white w-full h-full bg-[#0c0c0c]">
+						<div className="el font-bold text-white w-full h-full bg-transparent">
 							<div className="perspectiveText flex flex-col justify-center items-center h-full w-full select-none">
 								<p className="m-0 p-0 select-none">Web Designs</p>
 								<p className="m-0 p-0 select-none">Web Designs</p>
@@ -46,7 +50,7 @@ const Navbar: React.FC = () => {
 							animate={!isActive.isActive ? 'open' : 'closed'}
 						>
 							<div className="relative w-full h-full select-none">
-								<div className="el text-white w-full h-full bg-[#0c0c0c]">
+								<div className="el font-bold text-white w-full h-full bg-transparent">
 									<div className=" flex flex-col justify-center items-center h-full w-full select-none">
 										<p className="m-0 p-0 select-none">Menu</p>
 									</div>
@@ -73,7 +77,7 @@ const Navbar: React.FC = () => {
 				variants={background}
 				initial="initial"
 				animate={isActive.isActive ? 'open' : 'closed'}
-				className="bg-white h-full w-full z-[20] absolute left-0 top-[100%]"
+				className="bg-[#0f0f0f]/95 backdrop-blur-xl border-b border-white/[0.06] h-full w-full z-[20] absolute left-0 top-[100%]"
 			></motion.div>
 			<AnimatePresence mode="wait"> {isActive.isActive && <Index isActive={isActive} setIsActive={setIsActive} />}</AnimatePresence>
 		</div>
