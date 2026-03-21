@@ -38,11 +38,9 @@ const Card: React.FC<ProjectCardProps> = ({
 				}}
 				className="flex flex-col relative w-full h-[550px] lg:h-[450px] 2xl:h-[600px] rounded-[32px] md:rounded-[40px] origin-top bg-[#111111] text-white shadow-xl md:shadow-2xl overflow-hidden"
 			>
-				{/* Premium top border accent */}
 				<div className="absolute inset-x-0 top-0 h-px bg-white/10 z-30" />
 
 				<div className="h-full grid grid-cols-1 md:grid-cols-2 w-full relative">
-					{/* LEFT SIDE: TEXT AND ACTION SECTION */}
 					<div className="relative w-full p-8 md:p-10 2xl:p-16 flex flex-col justify-between z-20 h-full">
 						<div>
 							<span className="font-mono text-[9px] md:text-[10px] tracking-[0.25em] text-white/20 uppercase block mb-3 md:mb-4">
@@ -73,8 +71,6 @@ const Card: React.FC<ProjectCardProps> = ({
 								{description}
 							</p>
 						</div>
-
-						{/* BOTTOM BAR: META & BUTTON */}
 						<div className="mt-auto pt-4 lg:pt-5 2xl:pt-6 border-t border-white/5 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-0 shrink-0">
 							<div className="flex items-center gap-3">
 								<span className="font-mono text-[9px] md:text-[10px] tracking-widest text-white/20 uppercase">
@@ -99,16 +95,9 @@ const Card: React.FC<ProjectCardProps> = ({
 							</Link>
 						</div>
 					</div>
-
-					{/* RIGHT SIDE: IMAGE */}
 					<div className="absolute inset-0 md:relative w-full h-full overflow-hidden z-0 bg-[#111111]">
-						{/* Gradient overlay to smoothly blend dark text section with image on desktops */}
 						<div className="hidden absolute inset-y-0 left-[-1px] w-32 bg-gradient-to-r from-[#111111] via-[#111111]/60 to-transparent pointer-events-none z-10" />
-						
-						{/* Overlay for mobile to make text overlay readable since the image is a background stack */}
 						<div className="md:hidden absolute inset-0 bg-gradient-to-b from-[#111111]/95 via-[#111111]/90 to-[#111111]/70 pointer-events-none z-10" />
-
-						{/* Motion transform for slightly scaled image on hover/scroll. We use inset-[-1px] to fix sub-pixel boundary gaps natively! */}
 						<motion.div className="absolute inset-[-1px] max-md:opacity-60" style={{ scale: imageScale }}>
 							<Image 
 								src={src} 

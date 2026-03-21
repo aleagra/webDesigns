@@ -63,11 +63,9 @@ const PricingSection: React.FC = () => {
 	return (
 		<section className="bg-[#0c0c0c] w-full select-none relative overflow-hidden" id="pricing">
 			<div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[1000px] max-h-[1000px] bg-white/[0.015] blur-[150px] rounded-full pointer-events-none" />
-
-			{/* ── Section Header (Synchronized) ───────────────────────── */}
 			<div className="pt-20 md:pt-24 pb-8 border-b border-white/[0.06] px-6 md:px-10 lg:px-16 relative z-10">
 				<div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center md:items-end md:justify-between gap-8 md:gap-0 text-center md:text-left">
-					{/* Left — label + huge title */}
+		
 					<motion.div 
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -85,8 +83,6 @@ const PricingSection: React.FC = () => {
 							</span>
 						</div>
 					</motion.div>
-
-					{/* Right — descriptor */}
 					<motion.p 
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +94,6 @@ const PricingSection: React.FC = () => {
 					</motion.p>
 				</div>
 			</div>
-			{/* ────────────────────────────────────────────────────────── */}
 
 			<div className="w-full px-6 md:px-10 lg:px-16">
 				<div className="relative items-center mx-auto w-full max-w-[1440px] z-10 py-12 md:py-16 pb-20 md:pb-24">

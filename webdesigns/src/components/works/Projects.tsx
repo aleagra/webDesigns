@@ -13,10 +13,8 @@ const Project: React.FC = () => {
 
 	return (
 		<main ref={container} className="relative bg-[#0c0c0c] scroll-mt-10" id="works">
-			{/* ── Section Header (Synchronized) ───────────────────────── */}
 			<div className="pt-20 md:pt-24 pb-8 border-b border-white/[0.06] px-6 md:px-10 lg:px-16">
 				<div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center md:items-end md:justify-between gap-8 md:gap-0 text-center md:text-left">
-					{/* Left — label + huge title */}
 					<motion.div 
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -36,8 +34,6 @@ const Project: React.FC = () => {
 							</span>
 						</div>
 					</motion.div>
-
-					{/* Right — descriptor */}
 					<motion.p 
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -49,8 +45,6 @@ const Project: React.FC = () => {
 					</motion.p>
 				</div>
 			</div>
-			{/* ────────────────────────────────────────────────────────── */}
-
 			<div className="w-full px-6 md:px-10 lg:px-16 mt-8 md:mt-16 pb-20">
 				<div className="w-full max-w-[1440px] mx-auto overflow-visible">
 					{projects.map((project, i) => {

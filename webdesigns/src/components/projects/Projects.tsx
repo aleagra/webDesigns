@@ -10,10 +10,8 @@ export const Projects: React.FC = () => {
 
 	return (
 		<section className="bg-[#0c0c0c] scroll-mt-24 w-full" id="projects">
-			{/* ── Section Header (Synchronized) ───────────────────────── */}
 			<div className="pb-8 border-b border-white/[0.06] px-6 md:px-10 lg:px-16">
 				<div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center md:items-end md:justify-between gap-8 md:gap-0 text-center md:text-left">
-					{/* Left — label + huge title */}
 					<motion.div 
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -33,8 +31,6 @@ export const Projects: React.FC = () => {
 							</span>
 						</div>
 					</motion.div>
-
-					{/* Right — descriptor */}
 					<motion.p 
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -46,8 +42,6 @@ export const Projects: React.FC = () => {
 					</motion.p>
 				</div>
 			</div>
-			{/* ────────────────────────────────────────────────────────── */}
-
 			<div className="w-full px-6 md:px-10 lg:px-16">
 				<div className="w-full max-w-[1440px] mx-auto overflow-hidden">
 					{projectData.map((project, index) => {

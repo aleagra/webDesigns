@@ -126,7 +126,6 @@ body {
 	color: black;
 }
 
-/* ------------------------------------------- */
 
 .el:hover .perspectiveText {
 	transform: rotateX(90deg);
