@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import gsap from 'gsap'
 import type { ModalProps } from '@/types/interface'
@@ -29,10 +29,10 @@ export const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
 		}
 
 		window.addEventListener('mousemove', handleMouseMove)
-		return () => window.removeEventListener('mousemove', handleMouseMove)
+		return () => { window.removeEventListener('mousemove', handleMouseMove) }
 	}, [])
 
-	const currentProject = projects[index] || projects[0]
+	const currentProject = projects[index] ?? projects[0]
 
 	return (
 		<div className="pointer-events-none z-[9999] hidden lg:block">

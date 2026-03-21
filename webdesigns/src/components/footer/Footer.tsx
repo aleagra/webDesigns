@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
 
 				<div className="w-full flex justify-between flex-col md:flex-row gap-5 items-center mt-16 lg:mt-24 border-t border-white/[0.06] pt-8">
 					<button
-						onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+						onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}
 						className="overflow-hidden cursor-pointer no-drag"
 					>
 						<div className="relative w-full h-full flex gap-2 items-center opacity-70 transition-opacity duration-300 hover:opacity-100">

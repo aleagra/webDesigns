@@ -8,10 +8,10 @@ const PricingCard: React.FC<PricingCardProps & { isPopular?: boolean }> = ({ tit
 	return (
 		<div
 			className={`relative flex flex-col h-full p-6 md:p-8 rounded-3xl md:rounded-[32px] duration-500 transition-all ease-in-out shadow-2xl hover:-translate-y-2 group backdrop-blur-md border ${
-				isPopular ? 'bg-[#0c0c0c]/90 border-white/20 hover:border-white/40' : 'bg-[#0c0c0c]/80 border-white/5 hover:border-white/20'
+				isPopular === true ? 'bg-[#0c0c0c]/90 border-white/20 hover:border-white/40' : 'bg-[#0c0c0c]/80 border-white/5 hover:border-white/20'
 			}`}
 		>
-			{isPopular && (
+			{isPopular === true && (
 				<div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-white text-black text-[10px] md:text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-xl z-20">
 					Most Popular
 				</div>
@@ -33,7 +33,7 @@ const PricingCard: React.FC<PricingCardProps & { isPopular?: boolean }> = ({ tit
 						<li key={index} className="flex items-start">
 							<div
 								className={`flex justify-center items-center min-w-[20px] w-5 h-5 rounded-full shrink-0 md:mt-[2px] ${
-									isPopular ? 'bg-white text-black' : 'bg-white/10 text-white'
+									isPopular === true ? 'bg-white text-black' : 'bg-white/10 text-white'
 								}`}
 							>
 								<FiCheck className="w-3 h-3" />
@@ -46,7 +46,7 @@ const PricingCard: React.FC<PricingCardProps & { isPopular?: boolean }> = ({ tit
 				<div className="mt-auto">
 					<button
 						className={`w-full items-center block px-6 py-3 md:py-3.5 text-xs md:text-sm font-bold uppercase tracking-wide text-center rounded-full transition-all duration-300 hover:scale-[1.02] ${
-							isPopular
+							isPopular === true
 								? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:bg-gray-200'
 								: 'bg-white/5 text-white border border-white/10 backdrop-blur-md hover:bg-white hover:text-black'
 						}`}
