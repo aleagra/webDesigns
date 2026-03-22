@@ -1,12 +1,29 @@
 'use client'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { background, opacity } from './anim'
 import { Index } from './Index'
 
 const Navbar: React.FC = () => {
 	const [isActive, setIsActive] = useState<{ isActive: boolean; index?: number }>({ isActive: false, index: 0 })
+	const navRef = useRef<HTMLDivElement>(null)
+
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			const target = event.target as Element
+			if (target.id === 'nav-background' || (navRef.current && !navRef.current.contains(target))) {
+				if (isActive.isActive) {
+					setIsActive({ isActive: false })
+				}
+			}
+		}
+
+		document.addEventListener('mousedown', handleClickOutside)
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside)
+		}
+	}, [isActive.isActive])
 
 	useEffect(() => {
 		if (isActive.isActive) {
@@ -30,7 +47,7 @@ const Navbar: React.FC = () => {
 	}
 
 	return (
-		<div className="fixed w-full box-border px-8 py-5 lg:px-16 lg:py-6 z-[20] backdrop-blur-md bg-[#0c0c0c]/80 border-b border-white/[0.06]">
+		<div ref={navRef} className="fixed w-full box-border px-8 py-5 lg:px-16 lg:py-6 z-[20] backdrop-blur-md bg-[#0c0c0c]/80 border-b border-white/[0.06]">
 			<div className="flex justify-between items-center w-full max-w-[1440px] mx-auto uppercase text-sm lg:text-base font-bold tracking-[-0.03em] relative text-white">
 				<Link href="/" className="overflow-hidden cursor-pointer no-drag" onClick={onClickHome}>
 					<div className="relative w-full h-full select-none">
@@ -74,6 +91,7 @@ const Navbar: React.FC = () => {
 				</div>
 			</div>
 			<motion.div
+				id="nav-background"
 				variants={background}
 				initial="initial"
 				animate={isActive.isActive ? 'open' : 'closed'}
