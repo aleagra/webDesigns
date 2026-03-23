@@ -47,11 +47,12 @@ const Homepage: React.FC = () => {
 	}, [])
 
 	return (
-		<section className="min-h-screen flex flex-col justify-between bg-[#0c0c0c] text-white contenedor relative overflow-hidden pt-24 pb-10">
+		<section className="min-h-[100svh] flex flex-col bg-[#0c0c0c] text-white contenedor relative overflow-hidden pt-20 lg:pt-24">
 			<div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] max-w-[900px] h-[55vh] bg-white/[0.04] blur-[100px] rounded-full -translate-y-1/2 pointer-events-none" />
 			<div className="absolute top-1/3 -left-20 w-[35vw] max-w-[380px] h-[40vh] bg-white/[0.025] blur-[90px] rounded-full rotate-12 pointer-events-none" />
 			<div className="absolute top-1/3 -right-20 w-[35vw] max-w-[380px] h-[40vh] bg-white/[0.025] blur-[90px] rounded-full -rotate-12 pointer-events-none" />
-			<div className="flex-1 flex flex-col justify-center items-center px-6 md:px-10">
+			
+			<div className="flex-1 w-full flex flex-col justify-center items-center px-6 md:px-10 z-10 transition-transform duration-500">
 				<div className="text-center w-full max-w-[1440px] mx-auto relative z-10 flex flex-col items-center">
 					<div className="overflow-hidden pb-1 md:pb-3 w-full">
 						<h1 className="uppercase text-[12vw] sm:text-[9vw] md:text-[80px] lg:text-[100px] font-light tracking-[-0.03em] text-center leading-[0.9] header-text-1 char select-none text-white/95">
@@ -86,7 +87,8 @@ const Homepage: React.FC = () => {
 					</div>
 				</div>
 			</div>
-			<div className="marquee-fade opacity-0 translate-y-4 w-full relative z-10 border-t border-white/[0.06] mt-10">
+
+			<div className="marquee-fade opacity-0 translate-y-4 w-full relative z-10 border-t border-white/[0.06] bg-[#0c0c0c]">
 				<Marquee />
 			</div>
 		</section>
