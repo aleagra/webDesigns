@@ -10,9 +10,9 @@ const Navbar: React.FC = () => {
 	const navRef = useRef<HTMLDivElement>(null)
 
 	useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
+		const handleClickOutside = (event: MouseEvent): void => {
 			const target = event.target as Element
-			if (target.id === 'nav-background' || (navRef.current && !navRef.current.contains(target))) {
+			if (target.id === 'nav-background' || (navRef.current !== null && !navRef.current.contains(target))) {
 				if (isActive.isActive) {
 					setIsActive({ isActive: false })
 				}
