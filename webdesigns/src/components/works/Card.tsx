@@ -104,7 +104,8 @@ const Card: React.FC<ProjectCardProps> = ({
 								alt={title} 
 								className="object-cover object-center md:object-left-top w-full h-full" 
 								fill 
-								sizes="(max-width: 768px) 100vw, 50vw" 
+								quality={100}
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw" 
 								priority={i === 0}
 							/>
 						</motion.div>

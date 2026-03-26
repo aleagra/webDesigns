@@ -71,7 +71,8 @@ export const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
 											fill
 											alt="preview" 
 											className="object-cover scale-[1.02]" 
-											sizes="380px"
+											sizes="900px"
+											quality={100}
 											priority
 										/>
 									</div>

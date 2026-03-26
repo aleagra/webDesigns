@@ -32,12 +32,12 @@ export const pricingData: PricingCardProps[] = [
 	},
 ]
 export const projectData = [
-	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#4a449e', href: 'https://cryptowave.web.app/' },
-	{ title: 'Eztranslate', src: '/Eztranslate.webp', name: 'Alejandro Agra', color: '#122040', href: 'https://eztranslate.netlify.app/' },
+	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#38d16f', href: 'https://cryptowave.web.app/' },
+	{ title: 'Eztranslate', src: '/Eztranslate.webp', name: 'Alejandro Agra', color: '#010101', href: 'https://eztranslate.vercel.app/' },
 	{ title: 'SocialApp', src: '/SocialApp.webp', name: 'Alejandro Agra', color: '#ff595e', href: 'https://social-application.web.app/' },
 	{ title: 'Weatherme', src: '/Weatherme.webp', name: 'Alejandro Agra', color: '#3b5bb5', href: 'https://weather-me.web.app/' },
-	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#4a449e', href: 'https://cryptowave.web.app/' },
-	{ title: 'Eztranslate', src: '/Eztranslate.webp', name: 'Alejandro Agra', color: '#122040', href: 'https://eztranslate.netlify.app/' },
+	{ title: 'CryptoWave', src: '/CryptoWave.webp', name: 'Alejandro Agra', color: '#38d16f', href: 'https://cryptowave.web.app/' },
+	{ title: 'Eztranslate', src: '/Eztranslate.webp', name: 'Alejandro Agra', color: '#010101', href: 'https://eztranslate.vercel.app/' },
 	{ title: 'SocialApp', src: '/SocialApp.webp', name: 'Alejandro Agra', color: '#ff595e', href: 'https://social-application.web.app/' },
 ]
 export const projects = [
